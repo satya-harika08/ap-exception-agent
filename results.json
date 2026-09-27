@@ -1,0 +1,910 @@
+[
+  {
+    "action": "escalate",
+    "confidence": 0.95,
+    "cited_evidence": [],
+    "reasoning": "No prior history for Meridian Logistics and the freight charge is not on the PO, requiring human review.",
+    "resolution_note": "Escalate for manual review due to freight charge not on PO.",
+    "invoice_number": "MER-2208",
+    "memory_on": false,
+    "exceptions": [
+      {
+        "type": "freight_not_on_po",
+        "detail": "Line 'Freight charge' for $450.00 is not on PO-7761."
+      }
+    ],
+    "memory": null,
+    "seconds": 1.1,
+    "expected": "escalate",
+    "pass": true
+  },
+  {
+    "action": "reject",
+    "confidence": 0.95,
+    "cited_evidence": [
+      "Contract change Aug 1 2026",
+      "Invoice MER-2206 (2026-08-16)",
+      "Invoice MER-2207 (2026-09-15)"
+    ],
+    "reasoning": "The August\u202f1\u202f2026 contract mandates freight be included in the PO unit price, so a separate $450 freight line violates current terms; recent invoices show compliance with this rule.",
+    "resolution_note": "Reject MER-2208 because the separate freight charge is not permitted under the new contract; request vendor to revise the invoice.",
+    "invoice_number": "MER-2208",
+    "memory_on": true,
+    "exceptions": [
+      {
+        "type": "freight_not_on_po",
+        "detail": "Line 'Freight charge' for $450.00 is not on PO-7761."
+      }
+    ],
+    "memory": {
+      "recalled": [
+        {
+          "type": "world",
+          "text": "Arjun Mehta approved invoice MER-2202 despite the freight line exception, noting it follows the established billing pattern for Meridian Logistics. | When: 2026-04-14 | Involving: Arjun Mehta, Meridian Logistics | Consistent with previous billing patterns."
+        },
+        {
+          "type": "world",
+          "text": "Invoice MER-2202 from Meridian Logistics for $4,907.53 contains a $477.74 freight line not included in PO-7702. | When: 2026-04-12 | Involving: Meridian Logistics"
+        },
+        {
+          "type": "world",
+          "text": "Kavya Reddy approved the $480.24 freight charge on invoice MER-2201 because Meridian Logistics bills freight separately per their 2025 contract. | When: 2026-03-15 | Involving: Kavya Reddy | The charge is expected under the existing contract."
+        },
+        {
+          "type": "world",
+          "text": "Arjun Mehta approved the $496.12 freight charge on invoice MER-2204, noting that Meridian Logistics typically bills freight separately. | When: 2026-06-16 | Involving: Arjun Mehta | Exception resolution for invoice MER-2204"
+        },
+        {
+          "type": "observation",
+          "text": "Invoice MER-2203 from Meridian Logistics for $3,361.18 contains a $393.54 freight line not listed on PO-7703."
+        },
+        {
+          "type": "observation",
+          "text": "Invoice MER-2202 from Meridian Logistics for $4,907.53 contains a $477.74 freight line not included in PO-7702."
+        },
+        {
+          "type": "world",
+          "text": "Invoice MER-2201 from Meridian Logistics for $3,289.77 contains a $480.24 freight charge not listed on PO-7701. | When: 2026-03-12 | Involving: Meridian Logistics | Exception resolution for AP processing."
+        },
+        {
+          "type": "world",
+          "text": "Invoice MER-2205 from Meridian Logistics for $3,885.94 contains a $469.00 freight charge not listed on PO-7705. | When: 2026-07-13 | Involving: Meridian Logistics | AP exception resolution"
+        },
+        {
+          "type": "world",
+          "text": "Invoice MER-2204 from Meridian Logistics for $2,304.64 contains a $496.12 freight charge not listed on PO-7704. | When: 2026-06-13 | Involving: Meridian Logistics"
+        },
+        {
+          "type": "observation",
+          "text": "Invoice MER-2204 from Meridian Logistics for $2,304.64 contains a $496.12 freight charge not listed on PO-7704."
+        },
+        {
+          "type": "world",
+          "text": "Invoice MER-2203 from Meridian Logistics for $3,361.18 contains a $393.54 freight line not listed on PO-7703. | When: 2026-05-14 | Involving: Meridian Logistics"
+        },
+        {
+          "type": "observation",
+          "text": "Invoice MER-2205 from Meridian Logistics for $3,885.94 contains a $469.00 freight charge not listed on PO-7705."
+        },
+        {
+          "type": "world",
+          "text": "Invoice MER-2207 from Meridian Logistics for $4,573.58 was approved by Arjun Mehta. | When: 2026-09-15 | Involving: Arjun Mehta (reviewer), Meridian Logistics | Matched PO-7707 exactly with freight included in unit price per new contract."
+        },
+        {
+          "type": "world",
+          "text": "Invoice MER-2206 from Meridian Logistics for $1,737.83 was approved. | When: 2026-08-16 | Involving: Kavya Reddy (reviewer), Meridian Logistics | Matched PO-7706 exactly; freight included in unit price per new contract."
+        },
+        {
+          "type": "observation",
+          "text": "Invoice MER-2201 from Meridian Logistics for $3,289.77 includes a $480.24 freight charge that was not on PO-7701."
+        },
+        {
+          "type": "observation",
+          "text": "Meridian Logistics signed a contract effective August 1, 2026, requiring freight costs to be included in the PO unit price, rendering separate freight lines invalid."
+        },
+        {
+          "type": "world",
+          "text": "Meridian Logistics signed a new contract where freight costs are included in the PO unit price, making separate freight lines invalid. | When: 2026-08-01 | Involving: Meridian Logistics | AP policy or vendor contract change"
+        },
+        {
+          "type": "observation",
+          "text": "Arjun Mehta approved the $496.12 freight charge on invoice MER-2204, noting that Meridian Logistics typically bills freight separately."
+        },
+        {
+          "type": "observation",
+          "text": "Kavya Reddy approved the $480.24 freight charge on invoice MER-2201, noting that Meridian Logistics bills freight separately per their 2025 contract."
+        },
+        {
+          "type": "observation",
+          "text": "Arjun Mehta approved the $477.74 freight charge on invoice MER-2202, noting it follows the established billing pattern for Meridian Logistics."
+        },
+        {
+          "type": "world",
+          "text": "Priya Nair approved the $469.00 freight charge exception for invoice MER-2205 because it is a recurring charge within the normal range. | When: 2026-07-15 | Involving: Priya Nair | AP exception resolution"
+        },
+        {
+          "type": "observation",
+          "text": "AP policy allows approval of tax differences up to $0.05 per invoice as rounding without further review."
+        },
+        {
+          "type": "observation",
+          "text": "Invoice MER-2206 from Meridian Logistics for $1,737.83 was approved by Kavya Reddy on 2026-08-16, matching PO-7706 with freight costs included in the unit price per the new contract."
+        },
+        {
+          "type": "observation",
+          "text": "Priya Nair approved the $469.00 freight charge exception for invoice MER-2205, noting it is a recurring charge within the normal range."
+        },
+        {
+          "type": "world",
+          "text": "Kavya Reddy approved the $393.54 freight line exception for invoice MER-2203, noting it is a known charge consistent with prior approvals. | When: 2026-05-16 | Involving: Kavya Reddy"
+        },
+        {
+          "type": "observation",
+          "text": "Invoice MER-2207 from Meridian Logistics for $4,573.58 was approved by Arjun Mehta on 2026-09-15, matching PO-7707 with freight costs included in the unit price per the new contract."
+        },
+        {
+          "type": "observation",
+          "text": "Kavya Reddy approved the $393.54 freight line exception for invoice MER-2203, noting it is a known charge consistent with prior approvals."
+        },
+        {
+          "type": "world",
+          "text": "AP policy allows approval of tax differences up to $0.05 per invoice as rounding without further review. | When: 2026-03-01 | Policy change regarding tax rounding."
+        }
+      ],
+      "reflection": "### Resolution Recommendation for Invoice MER-2208\n\nBased on the established institutional memory and the current contract terms for Meridian Logistics, the exception on invoice MER-2208\u2014a separate $450.00 freight charge not listed on PO-7761\u2014**should be rejected.**\n\n#### Contractual Context and Policy Change\nA significant contract change effective **August 1, 2026**, fundamentally altered the billing requirements for Meridian Logistics. Under the new agreement, all freight costs must be included directly in the PO unit price. Consequently, any invoice submitted with a separate freight line after this date is considered invalid.\n\n#### Precedent and Rationale\nPrior to the August 1, 2026, contract, it was common practice to approve such exceptions. The following records illustrate the historical pattern that was explicitly discontinued by the recent contract update:\n\n*   **Invoice MER-2201 (2026-03-15):** Kavya Reddy approved a $480.24 separate freight charge, noting it was permitted under the 2025 contract.\n*   **Invoice MER-2202 (2026-04-14):** Arjun Mehta approved a $477.74 separate freight charge, citing the established billing pattern.\n*   **Invoice MER-2203 (2026-05-16):** Kavya Reddy approved a $393.54 separate freight charge as a known, consistent charge.\n*   **Invoice MER-2204 (2026-06-16):** Arjun Mehta approved a $496.12 separate freight charge, noting that Meridian typically billed freight separately.\n*   **Invoice MER-2205 (2026-07-15):** Priya Nair approved a $469.00 separate freight charge, identifying it as a recurring charge within a normal range.\n\n#### Current Enforcement\nFollowing the **August 1, 2026, contract change**, the policy for Meridian Logistics has been strictly enforced to ensure compliance with the new requirement that freight be bundled into the unit price:\n\n*   **Invoice MER-2206 (2026-08-16):** Approved by Kavya Reddy because the invoice matched PO-7706 exactly, with freight costs included in the unit price as per the new contract.\n*   **Invoice MER-2207 (2026-09-15):** Approved by Arjun Mehta because the invoice matched PO-7707 exactly, with freight costs included in the unit price as per the new contract.\n\n#### Conclusion\nThe historical tendency to approve separate freight charges for Meridian Logistics is no longer applicable. Because the contract change of August 1, 2026, overrides all previous approval patterns, the $450.00 freight charge on invoice MER-2208 constitutes a valid exception that does not comply with current terms. It is recommended that this invoice be returned to the vendor or corrected to reflect the required pricing structure."
+    },
+    "seconds": 15.9,
+    "expected": "escalate",
+    "pass": false
+  },
+  {
+    "action": "escalate",
+    "confidence": 0.9,
+    "cited_evidence": [],
+    "reasoning": "No prior history for Northwind Office Supply, so we cannot determine if the tax difference is acceptable.",
+    "resolution_note": "Tax amount on invoice differs from PO; requires human review.",
+    "invoice_number": "NW-2214",
+    "memory_on": false,
+    "exceptions": [
+      {
+        "type": "tax_mismatch",
+        "detail": "Tax $39.81 vs PO tax $39.78 (difference $0.03)."
+      }
+    ],
+    "memory": null,
+    "seconds": 0.8,
+    "expected": "auto_approve",
+    "pass": false
+  },
+  {
+    "action": "auto_approve",
+    "confidence": 0.97,
+    "cited_evidence": [
+      "NW-2202",
+      "NW-2207",
+      "NW-2212"
+    ],
+    "reasoning": "The $0.03 tax difference is within the $0.05 rounding tolerance defined in the policy effective 2026-03-01 and matches multiple prior approvals.",
+    "resolution_note": "Approved per policy; tax variance of $0.03 is acceptable.",
+    "invoice_number": "NW-2214",
+    "memory_on": true,
+    "exceptions": [
+      {
+        "type": "tax_mismatch",
+        "detail": "Tax $39.81 vs PO tax $39.78 (difference $0.03)."
+      }
+    ],
+    "memory": {
+      "recalled": [
+        {
+          "type": "world",
+          "text": "Invoice NW-2210 from Northwind Office Supply for $715.37 has a tax discrepancy of $0.02 compared to PO-7717. | When: 2026-07-20 | Involving: Northwind Office Supply | Invoice tax $52.97 differs from PO tax $52.99."
+        },
+        {
+          "type": "world",
+          "text": "Invoice NW-2207 from Northwind Office Supply for $239.37 was approved despite a $0.03 tax discrepancy. | When: 2026-06-06 | Involving: Arjun Mehta (reviewer) | The $0.03 tax difference is within the $0.05 rounding tolerance."
+        },
+        {
+          "type": "world",
+          "text": "Invoice NW-2212 from Northwind Office Supply for $805.80 was reviewed due to a tax discrepancy. | When: 2026-08-21 | Involving: Northwind Office Supply | Invoice tax $59.72 differs from PO-7719 tax $59.69."
+        },
+        {
+          "type": "observation",
+          "text": "Invoice NW-2212 from Northwind Office Supply for $805.80 has a $0.03 tax discrepancy compared to PO-7719, which Priya Nair approved on 2026-08-23 because it falls within the $0.05 rounding tolerance."
+        },
+        {
+          "type": "world",
+          "text": "Invoice NW-2202 from Northwind Office Supply for $588.63 has a tax discrepancy of $0.02 compared to PO-7709. | When: 2026-03-19 | Involving: Northwind Office Supply"
+        },
+        {
+          "type": "observation",
+          "text": "Invoice NW-2207 from Northwind Office Supply for $239.37 has a $0.03 tax discrepancy, which Arjun Mehta approved on 2026-06-06 because it falls within the $0.05 rounding tolerance."
+        },
+        {
+          "type": "world",
+          "text": "Invoice NW-2204 from Northwind Office Supply for $805.31 was reviewed due to a tax discrepancy. | When: 2026-04-20 | Involving: Northwind Office Supply | Invoice tax $59.66 differs from PO-7711 tax $59.65."
+        },
+        {
+          "type": "world",
+          "text": "Invoice NW-2211 from Northwind Office Supply for $944.33 was approved despite a tax discrepancy. | When: 2026-08-07 | Involving: Priya Nair (reviewer) | The $0.04 tax difference between the invoice ($69.99) and PO-7718 ($69.95) is within the $0.05 rounding tolerance."
+        },
+        {
+          "type": "world",
+          "text": "Invoice NW-2213 from Northwind Office Supply for $748.56 has a tax discrepancy of $0.01 compared to PO-7720. | When: 2026-09-06 | Involving: Northwind Office Supply"
+        },
+        {
+          "type": "world",
+          "text": "Invoice NW-2209 from Northwind Office Supply for $231.91 was approved despite a $0.01 tax discrepancy. | When: 2026-07-08 | Involving: Kavya Reddy (reviewer) | The $0.01 tax difference between the invoice and PO-7716 is within the $0.05 rounding tolerance."
+        },
+        {
+          "type": "observation",
+          "text": "Invoice NW-2209 from Northwind Office Supply for $231.91 has a $0.01 tax discrepancy compared to PO-7716, which Kavya Reddy approved on 2026-07-08 because it falls within the $0.05 rounding tolerance."
+        },
+        {
+          "type": "world",
+          "text": "Invoice NW-2208 from Northwind Office Supply for $124.15 was approved. | When: 2026-06-22 | Involving: Arjun Mehta (reviewer) | Matched PO-7715 exactly with no exceptions."
+        },
+        {
+          "type": "observation",
+          "text": "Invoice NW-2204 from Northwind Office Supply for $805.31 has a $0.01 tax discrepancy compared to PO-7711, which Arjun Mehta approved on 2026-04-23 because it falls within the $0.05 rounding tolerance."
+        },
+        {
+          "type": "world",
+          "text": "Invoice NW-2203 from Northwind Office Supply for $1,466.21 was approved by Arjun Mehta. | When: 2026-04-06 | Involving: Arjun Mehta (reviewer), Northwind Office Supply | The invoice matched purchase order PO-7710 exactly with no exceptions."
+        },
+        {
+          "type": "observation",
+          "text": "Invoice NW-2202 from Northwind Office Supply for $588.63 has a $0.02 tax discrepancy compared to PO-7709, which Arjun Mehta approved on 2026-03-22 because it falls within the $0.05 rounding tolerance."
+        },
+        {
+          "type": "world",
+          "text": "Invoice NW-2206 from Northwind Office Supply for $291.82 was approved by Priya Nair. | When: 2026-05-23 | Involving: Priya Nair (reviewer), Northwind Office Supply | The invoice matched purchase order PO-7713 exactly with no exceptions."
+        },
+        {
+          "type": "observation",
+          "text": "Invoice NW-2210 from Northwind Office Supply for $715.37 has a $0.02 tax discrepancy compared to PO-7717, which Kavya Reddy approved on 2026-07-23 because it falls within the $0.05 rounding tolerance."
+        },
+        {
+          "type": "observation",
+          "text": "Invoice NW-2211 from Northwind Office Supply for $944.33 has a $0.04 tax discrepancy compared to PO-7718, which Priya Nair approved on 2026-08-07 because it falls within the $0.05 rounding tolerance."
+        },
+        {
+          "type": "world",
+          "text": "Invoice NW-2205 from Northwind Office Supply for $794.86 was approved by Priya Nair. | When: 2026-05-08 | Involving: Priya Nair (reviewer), Northwind Office Supply | The invoice matched PO-7712 exactly with no exceptions."
+        },
+        {
+          "type": "world",
+          "text": "Invoice NW-2201 from Northwind Office Supply for $246.86 was approved by Kavya Reddy. | When: 2026-03-05 | Involving: Kavya Reddy (reviewer), Northwind Office Supply | The invoice matched PO-7708 exactly with no exceptions."
+        },
+        {
+          "type": "observation",
+          "text": "Invoice NW-2213 from Northwind Office Supply for $748.56 has a $0.01 tax discrepancy compared to PO-7720, which Priya Nair approved on 2026-09-07 because it falls within the $0.05 rounding tolerance."
+        },
+        {
+          "type": "world",
+          "text": "Priya Nair approved invoice NW-2212 because the $0.03 tax difference is within the $0.05 rounding tolerance. | When: 2026-08-23 | Involving: Priya Nair"
+        },
+        {
+          "type": "observation",
+          "text": "AP policy allows approval of tax differences up to $0.05 per invoice as rounding without further review."
+        },
+        {
+          "type": "observation",
+          "text": "Arjun Mehta approved invoice NW-2208 from Northwind Office Supply for $124.15 on June 22, 2026, as it matched PO-7715 without exceptions."
+        },
+        {
+          "type": "world",
+          "text": "Kavya Reddy approved invoice NW-2210 because the $0.02 tax difference is within the $0.05 rounding tolerance. | When: 2026-07-23 | Involving: Kavya Reddy"
+        },
+        {
+          "type": "observation",
+          "text": "Priya Nair approved invoice NW-2206 from Northwind Office Supply for $291.82 on May 23, 2026, as it matched PO-7713 without exceptions."
+        },
+        {
+          "type": "observation",
+          "text": "Arjun Mehta approved invoice NW-2203 from Northwind Office Supply for $1,466.21 on April 6, 2026, as it matched PO-7710 without exceptions."
+        },
+        {
+          "type": "observation",
+          "text": "Kavya Reddy approved invoice NW-2201 from Northwind Office Supply for $246.86 on March 5, 2026, as it matched PO-7708 without exceptions."
+        },
+        {
+          "type": "observation",
+          "text": "Priya Nair approved invoice NW-2205 from Northwind Office Supply for $794.86 on May 8, 2026, as it matched PO-7712 without exceptions."
+        },
+        {
+          "type": "world",
+          "text": "Arjun Mehta approved invoice NW-2202 because the $0.02 tax difference is within the $0.05 rounding tolerance. | When: 2026-03-22 | Involving: Arjun Mehta"
+        },
+        {
+          "type": "world",
+          "text": "AP policy allows approval of tax differences up to $0.05 per invoice as rounding without further review. | When: 2026-03-01 | Policy change regarding tax rounding."
+        },
+        {
+          "type": "world",
+          "text": "Arjun Mehta approved invoice NW-2204 because the $0.01 tax difference is within the $0.05 rounding tolerance. | When: 2026-04-23 | Involving: Arjun Mehta"
+        },
+        {
+          "type": "world",
+          "text": "Priya Nair approved invoice NW-2213 because the $0.01 tax difference is within the $0.05 rounding tolerance. | When: 2026-09-07 | Involving: Priya Nair"
+        }
+      ],
+      "reflection": "### Northwind Office Supply Tax Variance Resolution Policy\n\nBased on institutional records and accounts payable policy, the current procedure for handling tax discrepancies with Northwind Office Supply is well-established and consistent.\n\n#### AP Policy\nPer the policy effective as of **2026-03-01**, accounts payable allows for the approval of tax differences of up to **$0.05** per invoice as rounding adjustments without the need for further review or escalation (Ref: `1196700d-9f60-434d-ad34-c3d2a2d390a2`). There have been no subsequent contract changes or policy updates that override this rule.\n\n#### Past Precedent\nThe accounts payable team has consistently applied this $0.05 rounding tolerance to Northwind Office Supply invoices throughout 2026. Reviewers Arjun Mehta, Priya Nair, and Kavya Reddy have all utilized this policy to resolve tax mismatches.\n\n| Invoice | Date | Tax Difference | Reviewer |\n| :--- | :--- | :--- | :--- |\n| **NW-2202** | 2026-03-22 | $0.02 | Arjun Mehta |\n| **NW-2204** | 2026-04-23 | $0.01 | Arjun Mehta |\n| **NW-2207** | 2026-06-06 | $0.03 | Arjun Mehta |\n| **NW-2209** | 2026-07-08 | $0.01 | Kavya Reddy |\n| **NW-2210** | 2026-07-23 | $0.02 | Kavya Reddy |\n| **NW-2211** | 2026-08-07 | $0.04 | Priya Nair |\n| **NW-2212** | 2026-08-23 | $0.03 | Priya Nair |\n| **NW-2213** | 2026-09-07 | $0.01 | Priya Nair |\n\n#### Recommendation\nInvoice **NW-2214** presents a tax variance of **$0.03** ($39.81 on the invoice vs. $39.78 on the purchase order). As this variance is within the defined $0.05 rounding tolerance, historical precedent and current policy dictate that this exception should be approved without escalation. \n\nNo policy changes have occurred to alter this practice since its implementation on 2026-03-01. The consistency of approvals by the team confirms that a $0.03 variance is considered a standard rounding discrepancy for this vendor."
+    },
+    "seconds": 12.4,
+    "expected": "auto_approve",
+    "pass": true
+  },
+  {
+    "action": "escalate",
+    "confidence": 0.8,
+    "cited_evidence": [],
+    "reasoning": "There is no prior history for Kestrel Industrial Parts and the PO reference does not match any purchase order, requiring human verification.",
+    "resolution_note": "Escalated for manual review due to missing PO reference.",
+    "invoice_number": "KIP-2208",
+    "memory_on": false,
+    "exceptions": [
+      {
+        "type": "po_reference_not_found",
+        "detail": "PO reference KIP-SO-3871 does not match any purchase order. Candidate PO by vendor and amount: PO-7763.",
+        "candidates": [
+          "PO-7763"
+        ]
+      }
+    ],
+    "memory": null,
+    "seconds": 0.8,
+    "expected": "auto_approve",
+    "pass": false
+  },
+  {
+    "action": "auto_approve",
+    "confidence": 0.96,
+    "cited_evidence": [
+      "KIP-2201 approved 2026-03-10",
+      "KIP-2204 approved 2026-06-11",
+      "KIP-2207 approved 2026-09-13"
+    ],
+    "reasoning": "Seven prior Kestrel invoices with the same sales\u2011order\u2011to\u2011PO mismatch were manually matched and approved. No newer policy overrides this pattern, so the current invoice fits the established precedent.",
+    "resolution_note": "Approve KIP-2208 after matching sales order KIP-SO-3871 to PO-7763 as per standard Kestrel resolution practice.",
+    "invoice_number": "KIP-2208",
+    "memory_on": true,
+    "exceptions": [
+      {
+        "type": "po_reference_not_found",
+        "detail": "PO reference KIP-SO-3871 does not match any purchase order. Candidate PO by vendor and amount: PO-7763.",
+        "candidates": [
+          "PO-7763"
+        ]
+      }
+    ],
+    "memory": {
+      "recalled": [
+        {
+          "type": "world",
+          "text": "Invoice KIP-2201 from Kestrel Industrial Parts for $665.76 was flagged for an exception because the referenced sales order KIP-SO-3271 did not match any existing purchase order. | When: 2026-03-08 | Involving: Kestrel Industrial Parts"
+        },
+        {
+          "type": "world",
+          "text": "Invoice KIP-2207 from Kestrel Industrial Parts for $842.12 was flagged for an exception because the referenced sales order KIP-SO-3075 did not match any purchase order. | When: 2026-09-10 | Involving: Kestrel Industrial Parts"
+        },
+        {
+          "type": "world",
+          "text": "Invoice KIP-2202 from Kestrel Industrial Parts for $748.71 was flagged for an exception because the referenced sales order KIP-SO-3765 did not match any purchase order. | When: 2026-04-08 | Involving: Kestrel Industrial Parts"
+        },
+        {
+          "type": "observation",
+          "text": "Invoice KIP-2201 from Kestrel Industrial Parts for $665.76 was initially flagged for an exception due to a missing purchase order match for sales order KIP-SO-3271, but was subsequently approved by Arjun Mehta on March 10, 2026, after he matched the sales order to purchase order PO-7721."
+        },
+        {
+          "type": "world",
+          "text": "Invoice KIP-2203 from Kestrel Industrial Parts for $534.92 was flagged for an exception because the referenced sales order KIP-SO-3058 did not match any existing purchase order. | When: 2026-05-10 | Involving: Kestrel Industrial Parts | AP exception resolution"
+        },
+        {
+          "type": "world",
+          "text": "Invoice KIP-2205 from Kestrel Industrial Parts for $575.88 was flagged for an exception because the PO reference KIP-SO-3429 did not match any existing purchase order. | When: 2026-07-10 | Involving: Kestrel Industrial Parts"
+        },
+        {
+          "type": "world",
+          "text": "Invoice KIP-2204 from Kestrel Industrial Parts for $898.26 was flagged for an exception because the referenced sales order KIP-SO-3413 did not match any purchase order. | When: 2026-06-10 | Involving: Kestrel Industrial Parts"
+        },
+        {
+          "type": "world",
+          "text": "Invoice KIP-2206 from Kestrel Industrial Parts for $1,517.03 was processed with a PO mismatch exception. | When: 2026-08-08 | Involving: Kestrel Industrial Parts | PO reference KIP-SO-3468 did not match any existing purchase order."
+        },
+        {
+          "type": "world",
+          "text": "Arjun Mehta approved invoice KIP-2201 after matching sales order KIP-SO-3271 to purchase order PO-7721 based on the invoice amount and date. | When: 2026-03-10 | Involving: Arjun Mehta | Resolution of the PO mismatch exception."
+        },
+        {
+          "type": "observation",
+          "text": "Invoice KIP-2207 from Kestrel Industrial Parts for $842.12 was initially flagged for an exception due to a missing purchase order match for sales order KIP-SO-3075, but was subsequently approved by Priya Nair on September 13, 2026, after she matched the sales order to purchase order PO-7727."
+        },
+        {
+          "type": "observation",
+          "text": "Invoice KIP-2202 from Kestrel Industrial Parts for $748.71 was initially flagged for an exception due to a missing purchase order match for sales order KIP-SO-3765, but was subsequently approved by Priya Nair on April 10, 2026, after she matched the sales order to purchase order PO-7722."
+        },
+        {
+          "type": "observation",
+          "text": "Invoice KIP-2204 from Kestrel Industrial Parts for $898.26 was initially flagged for an exception due to a missing purchase order match for sales order KIP-SO-3413, but was subsequently approved by Kavya Reddy on June 11, 2026, after she matched the sales order to purchase order PO-7724."
+        },
+        {
+          "type": "observation",
+          "text": "Invoice KIP-2203 from Kestrel Industrial Parts for $534.92 was initially flagged for an exception due to a missing purchase order match for sales order KIP-SO-3058, but was subsequently approved by Priya Nair on May 13, 2026, after she matched the sales order to purchase order PO-7723."
+        },
+        {
+          "type": "observation",
+          "text": "Invoice KIP-2205 from Kestrel Industrial Parts for $575.88 was initially flagged for an exception due to a missing purchase order match for sales order KIP-SO-3429, but was subsequently approved by Kavya Reddy on July 13, 2026, after she matched the sales order to purchase order PO-7725."
+        },
+        {
+          "type": "observation",
+          "text": "Invoice KIP-2206 from Kestrel Industrial Parts for $1,517.03 was initially flagged for an exception due to a missing purchase order match for sales order KIP-SO-3468, but was subsequently approved by Priya Nair on August 10, 2026, after she matched the sales order to purchase order PO-7726."
+        },
+        {
+          "type": "world",
+          "text": "Priya Nair approved invoice KIP-2207 after matching sales order KIP-SO-3075 to purchase order PO-7727 based on amount and date. | When: 2026-09-13 | Involving: Priya Nair | Resolution of PO mismatch exception"
+        },
+        {
+          "type": "world",
+          "text": "Priya Nair approved invoice KIP-2206 after matching the sales order KIP-SO-3468 to PO-7726 based on amount and date. | When: 2026-08-10 | Involving: Priya Nair | Resolution of PO mismatch exception."
+        },
+        {
+          "type": "observation",
+          "text": "AP policy allows approval of tax differences up to $0.05 per invoice as rounding without further review."
+        },
+        {
+          "type": "world",
+          "text": "Kavya Reddy approved invoice KIP-2204 after matching sales order KIP-SO-3413 to purchase order PO-7724 based on the amount and date. | When: 2026-06-11 | Involving: Kavya Reddy | Resolution of PO reference exception"
+        },
+        {
+          "type": "world",
+          "text": "Kavya Reddy approved invoice KIP-2205 after matching the sales order KIP-SO-3429 to purchase order PO-7725 based on the amount and date. | When: 2026-07-13 | Involving: Kavya Reddy | Exception resolution"
+        },
+        {
+          "type": "world",
+          "text": "AP policy allows approval of tax differences up to $0.05 per invoice as rounding without further review. | When: 2026-03-01 | Policy change regarding tax rounding."
+        },
+        {
+          "type": "world",
+          "text": "Priya Nair approved invoice KIP-2202 after matching sales order KIP-SO-3765 to purchase order PO-7722 based on the amount and date. | When: 2026-04-10 | Involving: Priya Nair | Resolution of AP exception"
+        },
+        {
+          "type": "world",
+          "text": "Priya Nair approved invoice KIP-2203 after matching the sales order KIP-SO-3058 to purchase order PO-7723 based on the invoice amount and date. | When: 2026-05-13 | Involving: Priya Nair | Resolution of AP exception"
+        }
+      ],
+      "reflection": "### Resolution Precedent for Kestrel Industrial Parts\n\nBased on established institutional memory for Kestrel Industrial Parts, there is a consistent pattern for resolving purchase order (PO) mismatch exceptions where the vendor references their own internal sales order number instead of the company's purchase order number. \n\nThere have been no contract changes that override these historical resolution patterns. The only relevant policy update is the tax rounding rule implemented on March 1, 2026, which allows for $0.05 rounding adjustments without manual review; however, this does not affect the standard procedure for resolving PO reference mismatches.\n\n#### Historical Resolution Pattern\nWhen Kestrel Industrial Parts invoices contain a missing purchase order match due to the vendor citing a sales order (e.g., KIP-SO-XXXX) instead of a purchase order, reviewers consistently approve the invoice after manually matching the sales order to the corresponding purchase order based on the invoice amount and date.\n\nThe following table summarizes the precedent for this resolution:\n\n| Invoice | Date | Sales Order | Matched PO | Reviewer |\n| :--- | :--- | :--- | :--- | :--- |\n| KIP-2201 | 2026-03-08 | KIP-SO-3271 | PO-7721 | Arjun Mehta |\n| KIP-2202 | 2026-04-08 | KIP-SO-3765 | PO-7722 | Priya Nair |\n| KIP-2203 | 2026-05-10 | KIP-SO-3058 | PO-7723 | Priya Nair |\n| KIP-2204 | 2026-06-10 | KIP-SO-3413 | PO-7724 | Kavya Reddy |\n| KIP-2205 | 2026-07-10 | KIP-SO-3429 | PO-7725 | Kavya Reddy |\n| KIP-2206 | 2026-08-08 | KIP-SO-3468 | PO-7726 | Priya Nair |\n| KIP-2207 | 2026-09-10 | KIP-SO-3075 | PO-7727 | Priya Nair |\n\n#### Recommendation\nGiven that invoice **KIP-2208** follows the exact pattern observed in the seven previous instances listed above, the recommendation is to proceed with the manual match of **KIP-SO-3871** to **PO-7763** based on the invoice amount and date, consistent with the actions taken by Priya Nair, Kavya Reddy, and Arjun Mehta in all prior Kestrel Industrial Parts exception cases."
+    },
+    "seconds": 11.8,
+    "expected": "auto_approve",
+    "pass": true
+  },
+  {
+    "action": "reject",
+    "confidence": 0.95,
+    "cited_evidence": [],
+    "reasoning": "A duplicate invoice (BH-2213) was already submitted on 2026-09-05, and there is no memory evidence to justify otherwise.",
+    "resolution_note": "Reject the invoice due to duplicate submission.",
+    "invoice_number": "BH-2213",
+    "memory_on": false,
+    "exceptions": [
+      {
+        "type": "duplicate_invoice",
+        "detail": "Invoice number BH-2213 was already submitted on 2026-09-05."
+      }
+    ],
+    "memory": null,
+    "seconds": 0.7,
+    "expected": "reject",
+    "pass": true
+  },
+  {
+    "action": "reject",
+    "confidence": 0.98,
+    "cited_evidence": [
+      "Invoice BH-2205 rejected as duplicate 2026-05-15",
+      "Invoice BH-2201 rejected as duplicate 2026-03-24",
+      "Invoice BH-2209 duplicate rejected 2026-07-17"
+    ],
+    "reasoning": "Duplicate invoices from Blue Harbor Packaging have consistently been rejected and no policy change overrides this practice.",
+    "resolution_note": "Reject duplicate invoice BH-2213 as it was already processed on 2026-09-05.",
+    "invoice_number": "BH-2213",
+    "memory_on": true,
+    "exceptions": [
+      {
+        "type": "duplicate_invoice",
+        "detail": "Invoice number BH-2213 was already submitted on 2026-09-05."
+      }
+    ],
+    "memory": {
+      "recalled": [
+        {
+          "type": "world",
+          "text": "Invoice BH-2213 from Blue Harbor Packaging for $725.37 was approved by Kavya Reddy. | When: 2026-09-07 | Involving: Kavya Reddy (reviewer), Blue Harbor Packaging | The invoice matched PO-7740 exactly with no exceptions."
+        },
+        {
+          "type": "observation",
+          "text": "Kavya Reddy approved invoice BH-2213 from Blue Harbor Packaging for $725.37, which matched purchase order PO-7740."
+        },
+        {
+          "type": "world",
+          "text": "Invoice BH-2205 from Blue Harbor Packaging for $881.76 was rejected as a duplicate. | When: 2026-05-15 | Involving: Priya Nair (reviewer), Blue Harbor Packaging | The invoice was a duplicate of a previous submission (BH-2205 dated 2026-05-01) that was already approved on 2026-05-04."
+        },
+        {
+          "type": "world",
+          "text": "Invoice BH-2209 from Blue Harbor Packaging for $474.61 was approved by Kavya Reddy. | When: 2026-07-05 | Involving: Kavya Reddy (reviewer), Blue Harbor Packaging | The invoice matched PO-7736 exactly with no exceptions."
+        },
+        {
+          "type": "world",
+          "text": "Invoice BH-2209 from Blue Harbor Packaging for $474.61 was approved on 2026-07-05. | When: 2026-07-05 | Involving: Blue Harbor Packaging"
+        },
+        {
+          "type": "world",
+          "text": "Invoice BH-2205 from Blue Harbor Packaging for $881.76 was approved by Kavya Reddy. | When: 2026-05-04 | Involving: Kavya Reddy (reviewer), Blue Harbor Packaging | The invoice matched PO-7732 exactly with no exceptions."
+        },
+        {
+          "type": "world",
+          "text": "Invoice BH-2203 from Blue Harbor Packaging for $1,645.84 was approved by Priya Nair. | When: 2026-04-05 | Involving: Priya Nair (reviewer), Blue Harbor Packaging | The invoice matched PO-7730 exactly with no exceptions."
+        },
+        {
+          "type": "world",
+          "text": "Invoice BH-2207 from Blue Harbor Packaging for $2,323.21 was approved by Arjun Mehta. | When: 2026-06-05 | Involving: Arjun Mehta (reviewer), Blue Harbor Packaging | The invoice matched PO-7734 exactly with no exceptions."
+        },
+        {
+          "type": "observation",
+          "text": "Kavya Reddy approved invoice BH-2209 from Blue Harbor Packaging for $474.61, which matched purchase order PO-7736."
+        },
+        {
+          "type": "world",
+          "text": "Invoice BH-2206 from Blue Harbor Packaging for $149.56 was approved by Kavya Reddy. | When: 2026-05-19 | Involving: Kavya Reddy (reviewer), Blue Harbor Packaging | The invoice matched PO-7733 exactly with no exceptions."
+        },
+        {
+          "type": "world",
+          "text": "Invoice BH-2201 from Blue Harbor Packaging for $1,365.30 was rejected as a duplicate. | When: 2026-03-24 | Involving: Kavya Reddy (reviewer) | The invoice was a duplicate of a previously approved invoice (BH-2201 dated 2026-03-05)."
+        },
+        {
+          "type": "observation",
+          "text": "Kavya Reddy approved invoice BH-2205 from Blue Harbor Packaging for $881.76, which matched purchase order PO-7732."
+        },
+        {
+          "type": "world",
+          "text": "Invoice BH-2204 from Blue Harbor Packaging for $656.29 was approved by Priya Nair. | When: 2026-04-19 | Involving: Priya Nair (reviewer), Blue Harbor Packaging | The invoice matched PO-7731 exactly with no exceptions."
+        },
+        {
+          "type": "world",
+          "text": "Invoice BH-2208 from Blue Harbor Packaging for $402.62 was approved by Arjun Mehta. | When: 2026-06-20 | Involving: Arjun Mehta (reviewer), Blue Harbor Packaging | Matched PO-7735 exactly with no exceptions."
+        },
+        {
+          "type": "observation",
+          "text": "Priya Nair approved invoice BH-2203 from Blue Harbor Packaging for $1,645.84, which matched purchase order PO-7730."
+        },
+        {
+          "type": "observation",
+          "text": "Invoice BH-2209 from Blue Harbor Packaging for $474.61 was approved on 2026-07-05, and a duplicate submission of this invoice was rejected by Priya Nair on 2026-07-17."
+        },
+        {
+          "type": "observation",
+          "text": "Invoice BH-2205 from Blue Harbor Packaging for $881.76 was rejected by Priya Nair on 2026-05-15 because it was a duplicate of a previously approved invoice (BH-2205 dated 2026-05-01)."
+        },
+        {
+          "type": "observation",
+          "text": "Kavya Reddy approved invoice BH-2206 from Blue Harbor Packaging for $149.56, which matched purchase order PO-7733."
+        },
+        {
+          "type": "observation",
+          "text": "Arjun Mehta approved invoice BH-2207 from Blue Harbor Packaging for $2,323.21, which matched purchase order PO-7734."
+        },
+        {
+          "type": "world",
+          "text": "Invoice BH-2201 from Blue Harbor Packaging for $1,365.30 was approved by Kavya Reddy. | When: 2026-03-06 | Involving: Kavya Reddy (reviewer), Blue Harbor Packaging | The invoice matched purchase order PO-7728 exactly with no exceptions."
+        },
+        {
+          "type": "world",
+          "text": "Invoice BH-2202 from Blue Harbor Packaging for $1,553.08 was approved by Priya Nair. | When: 2026-03-20 | Involving: Priya Nair (reviewer), Blue Harbor Packaging | The invoice matched PO-7729 exactly with no exceptions."
+        },
+        {
+          "type": "world",
+          "text": "Invoice BH-2210 from Blue Harbor Packaging for $884.41 was approved by Kavya Reddy. | When: 2026-07-21 | Involving: Kavya Reddy (reviewer), Blue Harbor Packaging | The invoice matched PO-7737 exactly with no exceptions."
+        },
+        {
+          "type": "world",
+          "text": "Invoice BH-2211 from Blue Harbor Packaging for $599.79 was approved by Arjun Mehta. | When: 2026-08-08 | Involving: Arjun Mehta (reviewer), Blue Harbor Packaging | Matched PO-7738 exactly with no exceptions."
+        },
+        {
+          "type": "observation",
+          "text": "Arjun Mehta approved invoice BH-2208 from Blue Harbor Packaging for $402.62, which matched purchase order PO-7735."
+        },
+        {
+          "type": "world",
+          "text": "Priya Nair rejected a duplicate submission of invoice BH-2209. | When: 2026-07-17 | Involving: Priya Nair | The invoice was a duplicate of a previously approved invoice from 2026-07-02."
+        },
+        {
+          "type": "world",
+          "text": "Invoice BH-2212 from Blue Harbor Packaging for $2,095.58 was approved by Arjun Mehta. | When: 2026-08-21 | Involving: Arjun Mehta (reviewer), Blue Harbor Packaging | The invoice matched purchase order PO-7739 exactly with no exceptions."
+        },
+        {
+          "type": "observation",
+          "text": "Priya Nair approved invoice BH-2204 from Blue Harbor Packaging for $656.29, which matched purchase order PO-7731."
+        },
+        {
+          "type": "observation",
+          "text": "Kavya Reddy approved invoice BH-2210 from Blue Harbor Packaging for $884.41, which matched purchase order PO-7737."
+        },
+        {
+          "type": "observation",
+          "text": "Priya Nair approved invoice BH-2202 from Blue Harbor Packaging for $1,553.08, which matched purchase order PO-7729."
+        },
+        {
+          "type": "observation",
+          "text": "Kavya Reddy approved invoice BH-2201 from Blue Harbor Packaging for $1,365.30, which matched purchase order PO-7728."
+        },
+        {
+          "type": "observation",
+          "text": "Invoice BH-2201 from Blue Harbor Packaging for $1,365.30 was rejected by Kavya Reddy on 2026-03-24 because it was a duplicate of a previously approved invoice with the same identifier."
+        },
+        {
+          "type": "observation",
+          "text": "Arjun Mehta approved invoice BH-2212 from Blue Harbor Packaging for $2,095.58, which matched purchase order PO-7739."
+        },
+        {
+          "type": "observation",
+          "text": "Arjun Mehta approved invoice BH-2211 from Blue Harbor Packaging for $599.79, which matched purchase order PO-7738."
+        },
+        {
+          "type": "world",
+          "text": "AP policy allows approval of tax differences up to $0.05 per invoice as rounding without further review. | When: 2026-03-01 | Policy change regarding tax rounding."
+        },
+        {
+          "type": "observation",
+          "text": "AP policy allows approval of tax differences up to $0.05 per invoice as rounding without further review."
+        }
+      ],
+      "reflection": "The invoice **BH-2213** from Blue Harbor Packaging for $725.37, dated 2026-09-24, is a duplicate submission. The original invoice **BH-2213** (dated 2026-09-05) was already processed and approved by Kavya Reddy on 2026-09-07.\n\n### Precedent for Exception Resolution\nPast precedent for Blue Harbor Packaging consistently requires the rejection of duplicate invoice submissions. There is no evidence of policy changes that would allow for the approval of duplicate invoices.\n\nSpecific past resolutions for this vendor include:\n*   **Invoice BH-2209:** A duplicate submission was rejected by Priya Nair on 2026-07-17 (original approved 2026-07-05).\n*   **Invoice BH-2205:** A duplicate submission was rejected by Priya Nair on 2026-05-15 (original approved 2026-05-04).\n*   **Invoice BH-2201:** A duplicate submission was rejected by Kavya Reddy on 2026-03-24 (original approved 2026-03-06).\n\n### Policy Status\nThere have been no policy changes that override this established practice of rejecting duplicate invoices. The only relevant policy update recorded is from 2026-03-01, which permits tax rounding differences of up to $0.05, and this is not applicable to duplicate invoice exceptions.\n\n**Recommendation:** Reject the duplicate invoice **BH-2213** submitted on 2026-09-24 based on the established precedent for this vendor."
+    },
+    "seconds": 9.8,
+    "expected": "reject",
+    "pass": true
+  },
+  {
+    "invoice_number": "SOL-2208",
+    "memory_on": false,
+    "action": "auto_approve",
+    "confidence": 1.0,
+    "cited_evidence": [],
+    "exceptions": [],
+    "memory": null,
+    "reasoning": "Invoice matches the purchase order exactly.",
+    "resolution_note": "Matched PO exactly, no exceptions.",
+    "seconds": 0.0,
+    "expected": "none",
+    "pass": true
+  },
+  {
+    "invoice_number": "SOL-2208",
+    "memory_on": true,
+    "action": "auto_approve",
+    "confidence": 1.0,
+    "cited_evidence": [],
+    "exceptions": [],
+    "memory": null,
+    "reasoning": "Invoice matches the purchase order exactly.",
+    "resolution_note": "Matched PO exactly, no exceptions.",
+    "seconds": 0.0,
+    "expected": "none",
+    "pass": true
+  },
+  {
+    "invoice_number": "ARD-2207",
+    "memory_on": false,
+    "action": "auto_approve",
+    "confidence": 1.0,
+    "cited_evidence": [],
+    "exceptions": [],
+    "memory": null,
+    "reasoning": "Invoice matches the purchase order exactly.",
+    "resolution_note": "Matched PO exactly, no exceptions.",
+    "seconds": 0.0,
+    "expected": "none",
+    "pass": true
+  },
+  {
+    "invoice_number": "ARD-2207",
+    "memory_on": true,
+    "action": "auto_approve",
+    "confidence": 1.0,
+    "cited_evidence": [],
+    "exceptions": [],
+    "memory": null,
+    "reasoning": "Invoice matches the purchase order exactly.",
+    "resolution_note": "Matched PO exactly, no exceptions.",
+    "seconds": 0.0,
+    "expected": "none",
+    "pass": true
+  },
+  {
+    "action": "escalate",
+    "confidence": 0.9,
+    "cited_evidence": [],
+    "reasoning": "No prior history for Vireo Catering and the invoice terms differ from the PO terms, requiring human review.",
+    "resolution_note": "Escalated for manual review due to terms mismatch and lack of prior vendor history.",
+    "invoice_number": "VIR-2208",
+    "memory_on": false,
+    "exceptions": [
+      {
+        "type": "terms_mismatch",
+        "detail": "Invoice terms 'Net 30' vs PO terms '2/10 Net 30'."
+      }
+    ],
+    "memory": null,
+    "seconds": 1.3,
+    "expected": "auto_approve",
+    "pass": false
+  },
+  {
+    "action": "auto_approve",
+    "confidence": 0.97,
+    "cited_evidence": [
+      "VIR-2202",
+      "VIR-2205",
+      "VIR-2207"
+    ],
+    "reasoning": "Three prior Vireo Catering invoices with the same Net\u202f30 vs 2/10 Net\u202f30 mismatch were approved under PO terms, and no newer policy overrides this practice; the current invoice fits that pattern.",
+    "resolution_note": "Approve VIR-2208 using the PO\u2019s 2/10 Net\u202f30 terms to capture the early\u2011payment discount.",
+    "invoice_number": "VIR-2208",
+    "memory_on": true,
+    "exceptions": [
+      {
+        "type": "terms_mismatch",
+        "detail": "Invoice terms 'Net 30' vs PO terms '2/10 Net 30'."
+      }
+    ],
+    "memory": {
+      "recalled": [
+        {
+          "type": "world",
+          "text": "Priya Nair approved invoice VIR-2207 with instructions to pay according to the PO terms (2/10 Net 30) to capture the discount. | When: 2026-09-16 | Involving: Priya Nair | Vireo Catering's system defaults to Net 30, but the PO allows for a discount."
+        },
+        {
+          "type": "observation",
+          "text": "Invoice VIR-2207 from Vireo Catering for $104.87 has a payment term discrepancy between the invoice (Net 30) and the PO (2/10 Net 30)."
+        },
+        {
+          "type": "world",
+          "text": "Invoice VIR-2207 from Vireo Catering for $104.87 has a payment term discrepancy between the invoice (Net 30) and the PO (2/10 Net 30). | When: 2026-09-14 | Involving: Vireo Catering"
+        },
+        {
+          "type": "observation",
+          "text": "Priya Nair approved invoice VIR-2207 for payment according to PO terms (2/10 Net 30) to capture the discount, overriding the vendor's default Net 30 terms."
+        },
+        {
+          "type": "world",
+          "text": "Arjun Mehta approved invoice VIR-2205 with instructions to pay according to the PO terms (2/10 Net 30) to capture the discount. | When: 2026-07-14 | Involving: Arjun Mehta | Vireo Catering's system defaults to Net 30, but the PO requires 2/10 Net 30."
+        },
+        {
+          "type": "observation",
+          "text": "Invoice VIR-2205 from Vireo Catering for $1,185.01 has a payment term discrepancy between the invoice (Net 30) and PO-7758 (2/10 Net 30)."
+        },
+        {
+          "type": "world",
+          "text": "Invoice VIR-2205 from Vireo Catering for $1,185.01 has a payment term discrepancy between the invoice (Net 30) and the PO-7758 (2/10 Net 30). | When: 2026-07-12 | Involving: Vireo Catering"
+        },
+        {
+          "type": "observation",
+          "text": "Arjun Mehta approved invoice VIR-2205 for payment according to PO-7758 terms (2/10 Net 30) to capture the discount, overriding the vendor's default Net 30 terms."
+        },
+        {
+          "type": "world",
+          "text": "Arjun Mehta approved invoice VIR-2202 with instructions to pay according to the PO terms (2/10 Net 30) to capture the discount. | When: 2026-04-16 | Involving: Arjun Mehta | Vireo Catering's system defaults to Net 30, but the PO specifies 2/10 Net 30."
+        },
+        {
+          "type": "observation",
+          "text": "Invoice VIR-2202 from Vireo Catering for $418.78 has a payment term discrepancy between the invoice (Net 30) and PO-7755 (2/10 Net 30)."
+        },
+        {
+          "type": "world",
+          "text": "Invoice VIR-2202 from Vireo Catering for $418.78 has a payment term discrepancy between the invoice (Net 30) and the PO-7755 (2/10 Net 30). | When: 2026-04-14 | Involving: Vireo Catering"
+        },
+        {
+          "type": "observation",
+          "text": "Arjun Mehta approved invoice VIR-2202 for payment according to PO-7755 terms (2/10 Net 30) to capture the discount, overriding the vendor's default Net 30 terms."
+        },
+        {
+          "type": "world",
+          "text": "Invoice VIR-2201 from Vireo Catering for $1,115.21 was approved by Arjun Mehta. | When: 2026-03-16 | Involving: Arjun Mehta (reviewer), Vireo Catering | The invoice matched PO-7754 exactly with no exceptions."
+        },
+        {
+          "type": "world",
+          "text": "Invoice VIR-2204 from Vireo Catering for $1,190.16 was approved by Arjun Mehta. | When: 2026-06-17 | Involving: Arjun Mehta (reviewer), Vireo Catering | The invoice matched PO-7757 exactly with no exceptions."
+        },
+        {
+          "type": "world",
+          "text": "Invoice VIR-2203 from Vireo Catering for $467.61 was approved by Arjun Mehta. | When: 2026-05-15 | Involving: Arjun Mehta (reviewer), Vireo Catering | The invoice matched PO-7756 exactly with no exceptions."
+        },
+        {
+          "type": "world",
+          "text": "Invoice VIR-2206 from Vireo Catering for $1,227.18 was approved by Kavya Reddy. | When: 2026-08-16 | Involving: Kavya Reddy (reviewer), Vireo Catering | The invoice matched PO-7759 exactly with no exceptions."
+        },
+        {
+          "type": "observation",
+          "text": "Arjun Mehta approved invoice VIR-2201 from Vireo Catering for $1,115.21, which matched PO-7754 exactly."
+        },
+        {
+          "type": "observation",
+          "text": "Arjun Mehta approved invoice VIR-2203 from Vireo Catering for $467.61, which matched PO-7756 exactly."
+        },
+        {
+          "type": "observation",
+          "text": "Arjun Mehta approved invoice VIR-2204 from Vireo Catering for $1,190.16, which matched PO-7757 exactly."
+        },
+        {
+          "type": "observation",
+          "text": "Kavya Reddy approved invoice VIR-2206 from Vireo Catering for $1,227.18, which matched PO-7759 exactly."
+        },
+        {
+          "type": "observation",
+          "text": "AP policy allows approval of tax differences up to $0.05 per invoice as rounding without further review."
+        },
+        {
+          "type": "world",
+          "text": "AP policy allows approval of tax differences up to $0.05 per invoice as rounding without further review. | When: 2026-03-01 | Policy change regarding tax rounding."
+        }
+      ],
+      "reflection": "Based on established institutional precedent and accounts payable policy, the exception on invoice **VIR-2208** (terms discrepancy) should be resolved by approving the invoice for payment using the **2/10 Net 30** terms defined in the purchase order rather than the vendor's default **Net 30** terms.\n\n### Established Precedent for Vireo Catering\nThere is a clear, recurring pattern of resolving this exact payment term discrepancy for Vireo Catering by overriding the invoice terms to capture the 2% early payment discount. Reviewers consistently note that Vireo Catering\u2019s billing system defaults to \"Net 30,\" which does not reflect the negotiated \"2/10 Net 30\" terms established in the associated purchase orders. \n\nPast resolutions for this specific exception include:\n\n*   **Invoice VIR-2202 (2026-04-14):** Arjun Mehta approved payment under the PO-7755 terms (2/10 Net 30) to capture the discount, noting the vendor's system default.\n*   **Invoice VIR-2205 (2026-07-12):** Arjun Mehta approved payment under the PO-7758 terms (2/10 Net 30) to capture the discount, explicitly stating the invoice terms were a system default.\n*   **Invoice VIR-2207 (2026-09-14):** Priya Nair approved payment under the PO-7707 terms (2/10 Net 30) to capture the discount, citing the same system default issue.\n\n### Relevant AP Policies\nCurrent accounts payable policy (established 2026-03-01) provides guidance on handling minor discrepancies, such as tax rounding differences (up to $0.05), but there have been no policy changes that override or invalidate the established practice of honoring negotiated PO terms over vendor-provided invoice terms. \n\n### Recent Changes\nThere is no record of any contract change or policy update that would supersede the established practice of honoring the 2/10 Net 30 terms found in Vireo Catering purchase orders. The pattern of behavior from March 2026 through September 2026 remains consistent, and the most recent resolution (Priya Nair\u2019s approval of **VIR-2207** on **2026-09-16**) confirms that this remains the active protocol for current invoices. \n\n**Recommendation:** Proceed with the approval of VIR-2208, applying the 2/10 Net 30 terms as specified in the purchase order to capture the early payment discount."
+    },
+    "seconds": 10.0,
+    "expected": "auto_approve",
+    "pass": true
+  },
+  {
+    "action": "escalate",
+    "confidence": 0.9,
+    "cited_evidence": [],
+    "reasoning": "No prior history for Pinecrest Staffing and the invoice quantity exceeds the PO, requiring human review.",
+    "resolution_note": "Escalate for manual review due to quantity variance.",
+    "invoice_number": "PIN-2201",
+    "memory_on": false,
+    "exceptions": [
+      {
+        "type": "quantity_variance",
+        "detail": "'Temporary AP clerk, hourly': invoice qty 80 vs PO qty 72."
+      }
+    ],
+    "memory": null,
+    "seconds": 0.8,
+    "expected": "escalate",
+    "pass": true
+  },
+  {
+    "action": "escalate",
+    "confidence": 0.96,
+    "cited_evidence": [
+      "No Pinecrest Staffing history"
+    ],
+    "reasoning": "There is no prior record of how Pinecrest Staffing quantity variances were handled, so no pattern exists to auto\u2011approve. The invoice\u2019s 8\u2011hour overage requires manual review.",
+    "resolution_note": "Escalate to supervisor for manual review of the quantity discrepancy.",
+    "invoice_number": "PIN-2201",
+    "memory_on": true,
+    "exceptions": [
+      {
+        "type": "quantity_variance",
+        "detail": "'Temporary AP clerk, hourly': invoice qty 80 vs PO qty 72."
+      }
+    ],
+    "memory": {
+      "recalled": [
+        {
+          "type": "observation",
+          "text": "AP policy allows approval of tax differences up to $0.05 per invoice as rounding without further review."
+        },
+        {
+          "type": "world",
+          "text": "AP policy allows approval of tax differences up to $0.05 per invoice as rounding without further review. | When: 2026-03-01 | Policy change regarding tax rounding."
+        }
+      ],
+      "reflection": "## Resolution Recommendation for Invoice PIN-2201\n\nBased on the institutional records, there is **no relevant history** regarding Pinecrest Staffing\u2019s past invoice exceptions or quantity discrepancy resolutions. The retrieved data contains no evidence of previous invoices from this vendor or precedents for handling PO quantity mismatches involving their account.\n\n### Applicable AP Policy\nThe only relevant policy information currently recorded for invoice exceptions is as follows:\n\n*   **Policy (Effective 2026-03-01):** AP policy permits the automatic approval of tax differences of up to $0.05 per invoice as a standard rounding adjustment without requiring further review.\n\n### Recommendation\nBecause there is no historical precedent for how the team has previously addressed PO quantity discrepancies (e.g., the 8-hour variance noted between the invoice quantity of 80 and the PO quantity of 72 for \"Temporary AP clerk, hourly\"), the current records do not support a path for autonomous resolution.\n\n**Action Required:**\nPer institutional guidelines for scenarios lacking relevant vendor history or specific policy guidance on quantity variances, you must **escalate this invoice** to the appropriate supervisor or procurement lead for manual review and reconciliation of the quantity discrepancy."
+    },
+    "seconds": 10.4,
+    "expected": "escalate",
+    "pass": true
+  }
+]
