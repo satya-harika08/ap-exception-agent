@@ -1,0 +1,632 @@
+[
+  {
+    "invoice_number": "SOL-2201",
+    "vendor_id": "solace",
+    "invoice_date": "2026-03-02",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Kavya Reddy",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-03-05"
+  },
+  {
+    "invoice_number": "NW-2201",
+    "vendor_id": "northwind",
+    "invoice_date": "2026-03-03",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Kavya Reddy",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-03-05"
+  },
+  {
+    "invoice_number": "BH-2201",
+    "vendor_id": "blueharbor",
+    "invoice_date": "2026-03-05",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Kavya Reddy",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-03-06"
+  },
+  {
+    "invoice_number": "KIP-2201",
+    "vendor_id": "kestrel",
+    "invoice_date": "2026-03-08",
+    "exception_type": "po_reference_not_found",
+    "decision": "approved",
+    "reviewer": "Arjun Mehta",
+    "note": "Approved. Kestrel quotes their own sales order number KIP-SO-3271; matched to PO-7721 by amount and date.",
+    "resolved_date": "2026-03-10"
+  },
+  {
+    "invoice_number": "MER-2201",
+    "vendor_id": "meridian",
+    "invoice_date": "2026-03-12",
+    "exception_type": "freight_not_on_po",
+    "decision": "approved",
+    "reviewer": "Kavya Reddy",
+    "note": "Approved. Meridian bills freight separately under their 2025 contract, this is expected.",
+    "resolved_date": "2026-03-15"
+  },
+  {
+    "invoice_number": "VIR-2201",
+    "vendor_id": "vireo",
+    "invoice_date": "2026-03-13",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Arjun Mehta",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-03-16"
+  },
+  {
+    "invoice_number": "BH-2202",
+    "vendor_id": "blueharbor",
+    "invoice_date": "2026-03-18",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Priya Nair",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-03-20"
+  },
+  {
+    "invoice_number": "NW-2202",
+    "vendor_id": "northwind",
+    "invoice_date": "2026-03-19",
+    "exception_type": "tax_mismatch",
+    "decision": "approved",
+    "reviewer": "Arjun Mehta",
+    "note": "Approved. Tax differs from PO by $0.02, within the $0.05 rounding tolerance.",
+    "resolved_date": "2026-03-22"
+  },
+  {
+    "invoice_number": "BH-2201",
+    "vendor_id": "blueharbor",
+    "invoice_date": "2026-03-22",
+    "exception_type": "duplicate_invoice",
+    "decision": "rejected",
+    "reviewer": "Kavya Reddy",
+    "note": "Rejected. Duplicate of BH-2201 dated 2026-03-05, already approved on 2026-03-06.",
+    "resolved_date": "2026-03-24"
+  },
+  {
+    "invoice_number": "ARD-2201",
+    "vendor_id": "ardent",
+    "invoice_date": "2026-03-24",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Kavya Reddy",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-03-27"
+  },
+  {
+    "invoice_number": "BH-2203",
+    "vendor_id": "blueharbor",
+    "invoice_date": "2026-04-02",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Priya Nair",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-04-05"
+  },
+  {
+    "invoice_number": "SOL-2202",
+    "vendor_id": "solace",
+    "invoice_date": "2026-04-02",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Arjun Mehta",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-04-04"
+  },
+  {
+    "invoice_number": "NW-2203",
+    "vendor_id": "northwind",
+    "invoice_date": "2026-04-03",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Arjun Mehta",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-04-06"
+  },
+  {
+    "invoice_number": "KIP-2202",
+    "vendor_id": "kestrel",
+    "invoice_date": "2026-04-08",
+    "exception_type": "po_reference_not_found",
+    "decision": "approved",
+    "reviewer": "Priya Nair",
+    "note": "Approved. Kestrel quotes their own sales order number KIP-SO-3765; matched to PO-7722 by amount and date.",
+    "resolved_date": "2026-04-10"
+  },
+  {
+    "invoice_number": "MER-2202",
+    "vendor_id": "meridian",
+    "invoice_date": "2026-04-12",
+    "exception_type": "freight_not_on_po",
+    "decision": "approved",
+    "reviewer": "Arjun Mehta",
+    "note": "Approved, same separate freight billing pattern as previous Meridian invoices.",
+    "resolved_date": "2026-04-14"
+  },
+  {
+    "invoice_number": "VIR-2202",
+    "vendor_id": "vireo",
+    "invoice_date": "2026-04-14",
+    "exception_type": "terms_mismatch",
+    "decision": "approved",
+    "reviewer": "Arjun Mehta",
+    "note": "Approved. Vireo's billing system prints default Net 30; pay on 2/10 Net 30 per PO and take the discount.",
+    "resolved_date": "2026-04-16"
+  },
+  {
+    "invoice_number": "BH-2204",
+    "vendor_id": "blueharbor",
+    "invoice_date": "2026-04-18",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Priya Nair",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-04-19"
+  },
+  {
+    "invoice_number": "NW-2204",
+    "vendor_id": "northwind",
+    "invoice_date": "2026-04-20",
+    "exception_type": "tax_mismatch",
+    "decision": "approved",
+    "reviewer": "Arjun Mehta",
+    "note": "Approved. Tax differs from PO by $0.01, within the $0.05 rounding tolerance.",
+    "resolved_date": "2026-04-23"
+  },
+  {
+    "invoice_number": "ARD-2202",
+    "vendor_id": "ardent",
+    "invoice_date": "2026-04-23",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Arjun Mehta",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-04-25"
+  },
+  {
+    "invoice_number": "BH-2205",
+    "vendor_id": "blueharbor",
+    "invoice_date": "2026-05-01",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Kavya Reddy",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-05-04"
+  },
+  {
+    "invoice_number": "SOL-2203",
+    "vendor_id": "solace",
+    "invoice_date": "2026-05-02",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Priya Nair",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-05-05"
+  },
+  {
+    "invoice_number": "NW-2205",
+    "vendor_id": "northwind",
+    "invoice_date": "2026-05-06",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Priya Nair",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-05-08"
+  },
+  {
+    "invoice_number": "KIP-2203",
+    "vendor_id": "kestrel",
+    "invoice_date": "2026-05-10",
+    "exception_type": "po_reference_not_found",
+    "decision": "approved",
+    "reviewer": "Priya Nair",
+    "note": "Approved. Kestrel quotes their own sales order number KIP-SO-3058; matched to PO-7723 by amount and date.",
+    "resolved_date": "2026-05-13"
+  },
+  {
+    "invoice_number": "MER-2203",
+    "vendor_id": "meridian",
+    "invoice_date": "2026-05-14",
+    "exception_type": "freight_not_on_po",
+    "decision": "approved",
+    "reviewer": "Kavya Reddy",
+    "note": "Approved. Known Meridian freight line, consistent with prior approvals.",
+    "resolved_date": "2026-05-16"
+  },
+  {
+    "invoice_number": "BH-2205",
+    "vendor_id": "blueharbor",
+    "invoice_date": "2026-05-14",
+    "exception_type": "duplicate_invoice",
+    "decision": "rejected",
+    "reviewer": "Priya Nair",
+    "note": "Rejected. Duplicate of BH-2205 dated 2026-05-01, already approved on 2026-05-04.",
+    "resolved_date": "2026-05-15"
+  },
+  {
+    "invoice_number": "VIR-2203",
+    "vendor_id": "vireo",
+    "invoice_date": "2026-05-14",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Arjun Mehta",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-05-15"
+  },
+  {
+    "invoice_number": "BH-2206",
+    "vendor_id": "blueharbor",
+    "invoice_date": "2026-05-17",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Kavya Reddy",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-05-19"
+  },
+  {
+    "invoice_number": "NW-2206",
+    "vendor_id": "northwind",
+    "invoice_date": "2026-05-20",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Priya Nair",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-05-23"
+  },
+  {
+    "invoice_number": "ARD-2203",
+    "vendor_id": "ardent",
+    "invoice_date": "2026-05-23",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Kavya Reddy",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-05-26"
+  },
+  {
+    "invoice_number": "SOL-2204",
+    "vendor_id": "solace",
+    "invoice_date": "2026-06-02",
+    "exception_type": "price_variance",
+    "decision": "approved",
+    "reviewer": "Priya Nair",
+    "note": "Approved. 8% increase per contract amendment effective 2026-06-01. Future POs will use the new rate.",
+    "resolved_date": "2026-06-05"
+  },
+  {
+    "invoice_number": "NW-2207",
+    "vendor_id": "northwind",
+    "invoice_date": "2026-06-03",
+    "exception_type": "tax_mismatch",
+    "decision": "approved",
+    "reviewer": "Arjun Mehta",
+    "note": "Approved. Tax differs from PO by $0.03, within the $0.05 rounding tolerance.",
+    "resolved_date": "2026-06-06"
+  },
+  {
+    "invoice_number": "BH-2207",
+    "vendor_id": "blueharbor",
+    "invoice_date": "2026-06-03",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Arjun Mehta",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-06-05"
+  },
+  {
+    "invoice_number": "KIP-2204",
+    "vendor_id": "kestrel",
+    "invoice_date": "2026-06-10",
+    "exception_type": "po_reference_not_found",
+    "decision": "approved",
+    "reviewer": "Kavya Reddy",
+    "note": "Approved. Kestrel quotes their own sales order number KIP-SO-3413; matched to PO-7724 by amount and date.",
+    "resolved_date": "2026-06-11"
+  },
+  {
+    "invoice_number": "MER-2204",
+    "vendor_id": "meridian",
+    "invoice_date": "2026-06-13",
+    "exception_type": "freight_not_on_po",
+    "decision": "approved",
+    "reviewer": "Arjun Mehta",
+    "note": "Approved, freight billed separately as usual for Meridian.",
+    "resolved_date": "2026-06-16"
+  },
+  {
+    "invoice_number": "VIR-2204",
+    "vendor_id": "vireo",
+    "invoice_date": "2026-06-14",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Arjun Mehta",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-06-17"
+  },
+  {
+    "invoice_number": "BH-2208",
+    "vendor_id": "blueharbor",
+    "invoice_date": "2026-06-18",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Arjun Mehta",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-06-20"
+  },
+  {
+    "invoice_number": "NW-2208",
+    "vendor_id": "northwind",
+    "invoice_date": "2026-06-19",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Arjun Mehta",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-06-22"
+  },
+  {
+    "invoice_number": "ARD-2204",
+    "vendor_id": "ardent",
+    "invoice_date": "2026-06-24",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Priya Nair",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-06-26"
+  },
+  {
+    "invoice_number": "BH-2209",
+    "vendor_id": "blueharbor",
+    "invoice_date": "2026-07-02",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Kavya Reddy",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-07-05"
+  },
+  {
+    "invoice_number": "SOL-2205",
+    "vendor_id": "solace",
+    "invoice_date": "2026-07-02",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Kavya Reddy",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-07-04"
+  },
+  {
+    "invoice_number": "NW-2209",
+    "vendor_id": "northwind",
+    "invoice_date": "2026-07-07",
+    "exception_type": "tax_mismatch",
+    "decision": "approved",
+    "reviewer": "Kavya Reddy",
+    "note": "Approved. Tax differs from PO by $0.01, within the $0.05 rounding tolerance.",
+    "resolved_date": "2026-07-08"
+  },
+  {
+    "invoice_number": "KIP-2205",
+    "vendor_id": "kestrel",
+    "invoice_date": "2026-07-10",
+    "exception_type": "po_reference_not_found",
+    "decision": "approved",
+    "reviewer": "Kavya Reddy",
+    "note": "Approved. Kestrel quotes their own sales order number KIP-SO-3429; matched to PO-7725 by amount and date.",
+    "resolved_date": "2026-07-13"
+  },
+  {
+    "invoice_number": "VIR-2205",
+    "vendor_id": "vireo",
+    "invoice_date": "2026-07-12",
+    "exception_type": "terms_mismatch",
+    "decision": "approved",
+    "reviewer": "Arjun Mehta",
+    "note": "Approved. Vireo's billing system prints default Net 30; pay on 2/10 Net 30 per PO and take the discount.",
+    "resolved_date": "2026-07-14"
+  },
+  {
+    "invoice_number": "MER-2205",
+    "vendor_id": "meridian",
+    "invoice_date": "2026-07-13",
+    "exception_type": "freight_not_on_po",
+    "decision": "approved",
+    "reviewer": "Priya Nair",
+    "note": "Approved. Recurring Meridian freight charge, amount in normal range.",
+    "resolved_date": "2026-07-15"
+  },
+  {
+    "invoice_number": "BH-2209",
+    "vendor_id": "blueharbor",
+    "invoice_date": "2026-07-16",
+    "exception_type": "duplicate_invoice",
+    "decision": "rejected",
+    "reviewer": "Priya Nair",
+    "note": "Rejected. Duplicate of BH-2209 dated 2026-07-02, already approved on 2026-07-05.",
+    "resolved_date": "2026-07-17"
+  },
+  {
+    "invoice_number": "BH-2210",
+    "vendor_id": "blueharbor",
+    "invoice_date": "2026-07-19",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Kavya Reddy",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-07-21"
+  },
+  {
+    "invoice_number": "NW-2210",
+    "vendor_id": "northwind",
+    "invoice_date": "2026-07-20",
+    "exception_type": "tax_mismatch",
+    "decision": "approved",
+    "reviewer": "Kavya Reddy",
+    "note": "Approved. Tax differs from PO by $0.02, within the $0.05 rounding tolerance.",
+    "resolved_date": "2026-07-23"
+  },
+  {
+    "invoice_number": "ARD-2205",
+    "vendor_id": "ardent",
+    "invoice_date": "2026-07-26",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Kavya Reddy",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-07-27"
+  },
+  {
+    "invoice_number": "SOL-2206",
+    "vendor_id": "solace",
+    "invoice_date": "2026-08-02",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Priya Nair",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-08-03"
+  },
+  {
+    "invoice_number": "NW-2211",
+    "vendor_id": "northwind",
+    "invoice_date": "2026-08-04",
+    "exception_type": "tax_mismatch",
+    "decision": "approved",
+    "reviewer": "Priya Nair",
+    "note": "Approved. Tax differs from PO by $0.04, within the $0.05 rounding tolerance.",
+    "resolved_date": "2026-08-07"
+  },
+  {
+    "invoice_number": "BH-2211",
+    "vendor_id": "blueharbor",
+    "invoice_date": "2026-08-05",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Arjun Mehta",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-08-08"
+  },
+  {
+    "invoice_number": "KIP-2206",
+    "vendor_id": "kestrel",
+    "invoice_date": "2026-08-08",
+    "exception_type": "po_reference_not_found",
+    "decision": "approved",
+    "reviewer": "Priya Nair",
+    "note": "Approved. Kestrel quotes their own sales order number KIP-SO-3468; matched to PO-7726 by amount and date.",
+    "resolved_date": "2026-08-10"
+  },
+  {
+    "invoice_number": "MER-2206",
+    "vendor_id": "meridian",
+    "invoice_date": "2026-08-13",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Kavya Reddy",
+    "note": "Matched PO exactly. Freight included in unit price per new contract.",
+    "resolved_date": "2026-08-16"
+  },
+  {
+    "invoice_number": "VIR-2206",
+    "vendor_id": "vireo",
+    "invoice_date": "2026-08-13",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Kavya Reddy",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-08-16"
+  },
+  {
+    "invoice_number": "BH-2212",
+    "vendor_id": "blueharbor",
+    "invoice_date": "2026-08-18",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Arjun Mehta",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-08-21"
+  },
+  {
+    "invoice_number": "NW-2212",
+    "vendor_id": "northwind",
+    "invoice_date": "2026-08-21",
+    "exception_type": "tax_mismatch",
+    "decision": "approved",
+    "reviewer": "Priya Nair",
+    "note": "Approved. Tax differs from PO by $0.03, within the $0.05 rounding tolerance.",
+    "resolved_date": "2026-08-23"
+  },
+  {
+    "invoice_number": "ARD-2206",
+    "vendor_id": "ardent",
+    "invoice_date": "2026-08-27",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Priya Nair",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-08-29"
+  },
+  {
+    "invoice_number": "SOL-2207",
+    "vendor_id": "solace",
+    "invoice_date": "2026-09-02",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Priya Nair",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-09-03"
+  },
+  {
+    "invoice_number": "BH-2213",
+    "vendor_id": "blueharbor",
+    "invoice_date": "2026-09-05",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Kavya Reddy",
+    "note": "Matched PO exactly, no exceptions.",
+    "resolved_date": "2026-09-07"
+  },
+  {
+    "invoice_number": "NW-2213",
+    "vendor_id": "northwind",
+    "invoice_date": "2026-09-06",
+    "exception_type": "tax_mismatch",
+    "decision": "approved",
+    "reviewer": "Priya Nair",
+    "note": "Approved. Tax differs from PO by $0.01, within the $0.05 rounding tolerance.",
+    "resolved_date": "2026-09-07"
+  },
+  {
+    "invoice_number": "KIP-2207",
+    "vendor_id": "kestrel",
+    "invoice_date": "2026-09-10",
+    "exception_type": "po_reference_not_found",
+    "decision": "approved",
+    "reviewer": "Priya Nair",
+    "note": "Approved. Kestrel quotes their own sales order number KIP-SO-3075; matched to PO-7727 by amount and date.",
+    "resolved_date": "2026-09-13"
+  },
+  {
+    "invoice_number": "MER-2207",
+    "vendor_id": "meridian",
+    "invoice_date": "2026-09-12",
+    "exception_type": null,
+    "decision": "approved",
+    "reviewer": "Arjun Mehta",
+    "note": "Matched PO exactly. Freight included in unit price per new contract.",
+    "resolved_date": "2026-09-15"
+  },
+  {
+    "invoice_number": "VIR-2207",
+    "vendor_id": "vireo",
+    "invoice_date": "2026-09-14",
+    "exception_type": "terms_mismatch",
+    "decision": "approved",
+    "reviewer": "Priya Nair",
+    "note": "Approved. Vireo's billing system prints default Net 30; pay on 2/10 Net 30 per PO and take the discount.",
+    "resolved_date": "2026-09-16"
+  }
+]

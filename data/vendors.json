@@ -1,0 +1,58 @@
+[
+  {
+    "vendor_id": "meridian",
+    "name": "Meridian Logistics",
+    "prefix": "MER",
+    "category": "Freight and logistics",
+    "terms": "Net 30"
+  },
+  {
+    "vendor_id": "northwind",
+    "name": "Northwind Office Supply",
+    "prefix": "NW",
+    "category": "Office supplies",
+    "terms": "Net 30"
+  },
+  {
+    "vendor_id": "kestrel",
+    "name": "Kestrel Industrial Parts",
+    "prefix": "KIP",
+    "category": "Industrial parts",
+    "terms": "Net 45"
+  },
+  {
+    "vendor_id": "blueharbor",
+    "name": "Blue Harbor Packaging",
+    "prefix": "BH",
+    "category": "Packaging",
+    "terms": "Net 30"
+  },
+  {
+    "vendor_id": "solace",
+    "name": "Solace Facilities Services",
+    "prefix": "SOL",
+    "category": "Facilities",
+    "terms": "Net 30"
+  },
+  {
+    "vendor_id": "ardent",
+    "name": "Ardent IT Solutions",
+    "prefix": "ARD",
+    "category": "IT services",
+    "terms": "Net 30"
+  },
+  {
+    "vendor_id": "vireo",
+    "name": "Vireo Catering",
+    "prefix": "VIR",
+    "category": "Catering",
+    "terms": "2/10 Net 30"
+  },
+  {
+    "vendor_id": "pinecrest",
+    "name": "Pinecrest Staffing",
+    "prefix": "PIN",
+    "category": "Temporary staffing",
+    "terms": "Net 15"
+  }
+]

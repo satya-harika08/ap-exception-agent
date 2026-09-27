@@ -1,0 +1,1647 @@
+[
+  {
+    "invoice_number": "SOL-2201",
+    "vendor_id": "solace",
+    "vendor_name": "Solace Facilities Services",
+    "invoice_date": "2026-03-02",
+    "po_reference": "PO-7741",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "JAN-MTH",
+        "description": "Monthly janitorial service",
+        "qty": 1,
+        "unit_price": 4200.0,
+        "amount": 4200.0
+      },
+      {
+        "sku": "WIN-CLN",
+        "description": "Window cleaning, quarterly visit",
+        "qty": 1,
+        "unit_price": 650.0,
+        "amount": 650.0
+      }
+    ],
+    "subtotal": 4850.0,
+    "tax": 388.0,
+    "total": 5238.0
+  },
+  {
+    "invoice_number": "NW-2201",
+    "vendor_id": "northwind",
+    "vendor_name": "Northwind Office Supply",
+    "invoice_date": "2026-03-03",
+    "po_reference": "PO-7708",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "TNR-BLK",
+        "description": "Toner cartridge, black",
+        "qty": 3,
+        "unit_price": 76.19,
+        "amount": 228.57
+      }
+    ],
+    "subtotal": 228.57,
+    "tax": 18.29,
+    "total": 246.86
+  },
+  {
+    "invoice_number": "BH-2201",
+    "vendor_id": "blueharbor",
+    "vendor_name": "Blue Harbor Packaging",
+    "invoice_date": "2026-03-05",
+    "po_reference": "PO-7728",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "BOX-181212",
+        "description": "Corrugated box 18x12x12, bundle of 25",
+        "qty": 13,
+        "unit_price": 39.12,
+        "amount": 508.56
+      },
+      {
+        "sku": "VFL-10",
+        "description": "Void fill, 10 cu ft bag",
+        "qty": 12,
+        "unit_price": 30.93,
+        "amount": 371.16
+      },
+      {
+        "sku": "WRP-STR",
+        "description": "Stretch wrap roll",
+        "qty": 15,
+        "unit_price": 25.63,
+        "amount": 384.45
+      }
+    ],
+    "subtotal": 1264.17,
+    "tax": 101.13,
+    "total": 1365.3
+  },
+  {
+    "invoice_number": "KIP-2201",
+    "vendor_id": "kestrel",
+    "vendor_name": "Kestrel Industrial Parts",
+    "invoice_date": "2026-03-08",
+    "po_reference": "KIP-SO-3271",
+    "payment_terms": "Net 45",
+    "lines": [
+      {
+        "sku": "BRG-6204",
+        "description": "Bearing assembly 6204",
+        "qty": 44,
+        "unit_price": 14.01,
+        "amount": 616.44
+      }
+    ],
+    "subtotal": 616.44,
+    "tax": 49.32,
+    "total": 665.76
+  },
+  {
+    "invoice_number": "MER-2201",
+    "vendor_id": "meridian",
+    "vendor_name": "Meridian Logistics",
+    "invoice_date": "2026-03-12",
+    "po_reference": "PO-7701",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "PAL-STR",
+        "description": "Pallet storage, monthly",
+        "qty": 4,
+        "unit_price": 60.89,
+        "amount": 243.56
+      },
+      {
+        "sku": "LTL-REG",
+        "description": "LTL shipment, regional lane",
+        "qty": 2,
+        "unit_price": 977.96,
+        "amount": 1955.92
+      },
+      {
+        "sku": "WH-HNDL",
+        "description": "Warehouse handling fee",
+        "qty": 3,
+        "unit_price": 122.12,
+        "amount": 366.36
+      },
+      {
+        "sku": "FRT-SEP",
+        "description": "Freight charge",
+        "qty": 1,
+        "unit_price": 480.24,
+        "amount": 480.24
+      }
+    ],
+    "subtotal": 3046.08,
+    "tax": 243.69,
+    "total": 3289.77
+  },
+  {
+    "invoice_number": "VIR-2201",
+    "vendor_id": "vireo",
+    "vendor_name": "Vireo Catering",
+    "invoice_date": "2026-03-13",
+    "po_reference": "PO-7754",
+    "payment_terms": "2/10 Net 30",
+    "lines": [
+      {
+        "sku": "COF-SVC",
+        "description": "Coffee service",
+        "qty": 4,
+        "unit_price": 106.25,
+        "amount": 425.0
+      },
+      {
+        "sku": "LUN-HEAD",
+        "description": "Working lunch, per head",
+        "qty": 35,
+        "unit_price": 17.36,
+        "amount": 607.6
+      }
+    ],
+    "subtotal": 1032.6,
+    "tax": 82.61,
+    "total": 1115.21
+  },
+  {
+    "invoice_number": "BH-2202",
+    "vendor_id": "blueharbor",
+    "vendor_name": "Blue Harbor Packaging",
+    "invoice_date": "2026-03-18",
+    "po_reference": "PO-7729",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "WRP-STR",
+        "description": "Stretch wrap roll",
+        "qty": 8,
+        "unit_price": 25.81,
+        "amount": 206.48
+      },
+      {
+        "sku": "BOX-181212",
+        "description": "Corrugated box 18x12x12, bundle of 25",
+        "qty": 36,
+        "unit_price": 34.21,
+        "amount": 1231.56
+      }
+    ],
+    "subtotal": 1438.04,
+    "tax": 115.04,
+    "total": 1553.08
+  },
+  {
+    "invoice_number": "NW-2202",
+    "vendor_id": "northwind",
+    "vendor_name": "Northwind Office Supply",
+    "invoice_date": "2026-03-19",
+    "po_reference": "PO-7709",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "TNR-BLK",
+        "description": "Toner cartridge, black",
+        "qty": 3,
+        "unit_price": 80.66,
+        "amount": 241.98
+      },
+      {
+        "sku": "PPR-A4",
+        "description": "Copy paper A4, case of 5 reams",
+        "qty": 7,
+        "unit_price": 43.29,
+        "amount": 303.03
+      }
+    ],
+    "subtotal": 545.01,
+    "tax": 43.62,
+    "total": 588.63
+  },
+  {
+    "invoice_number": "BH-2201",
+    "vendor_id": "blueharbor",
+    "vendor_name": "Blue Harbor Packaging",
+    "invoice_date": "2026-03-22",
+    "po_reference": "PO-7728",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "BOX-181212",
+        "description": "Corrugated box 18x12x12, bundle of 25",
+        "qty": 13,
+        "unit_price": 39.12,
+        "amount": 508.56
+      },
+      {
+        "sku": "VFL-10",
+        "description": "Void fill, 10 cu ft bag",
+        "qty": 12,
+        "unit_price": 30.93,
+        "amount": 371.16
+      },
+      {
+        "sku": "WRP-STR",
+        "description": "Stretch wrap roll",
+        "qty": 15,
+        "unit_price": 25.63,
+        "amount": 384.45
+      }
+    ],
+    "subtotal": 1264.17,
+    "tax": 101.13,
+    "total": 1365.3
+  },
+  {
+    "invoice_number": "ARD-2201",
+    "vendor_id": "ardent",
+    "vendor_name": "Ardent IT Solutions",
+    "invoice_date": "2026-03-24",
+    "po_reference": "PO-7748",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "MES-SEAT",
+        "description": "Managed endpoint support, per seat",
+        "qty": 43,
+        "unit_price": 45.0,
+        "amount": 1935.0
+      },
+      {
+        "sku": "OFS-SEAT",
+        "description": "Office suite license, per seat",
+        "qty": 43,
+        "unit_price": 22.0,
+        "amount": 946.0
+      }
+    ],
+    "subtotal": 2881.0,
+    "tax": 230.48,
+    "total": 3111.48
+  },
+  {
+    "invoice_number": "BH-2203",
+    "vendor_id": "blueharbor",
+    "vendor_name": "Blue Harbor Packaging",
+    "invoice_date": "2026-04-02",
+    "po_reference": "PO-7730",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "BOX-181212",
+        "description": "Corrugated box 18x12x12, bundle of 25",
+        "qty": 27,
+        "unit_price": 37.65,
+        "amount": 1016.55
+      },
+      {
+        "sku": "WRP-STR",
+        "description": "Stretch wrap roll",
+        "qty": 23,
+        "unit_price": 22.06,
+        "amount": 507.38
+      }
+    ],
+    "subtotal": 1523.93,
+    "tax": 121.91,
+    "total": 1645.84
+  },
+  {
+    "invoice_number": "SOL-2202",
+    "vendor_id": "solace",
+    "vendor_name": "Solace Facilities Services",
+    "invoice_date": "2026-04-02",
+    "po_reference": "PO-7742",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "JAN-MTH",
+        "description": "Monthly janitorial service",
+        "qty": 1,
+        "unit_price": 4200.0,
+        "amount": 4200.0
+      }
+    ],
+    "subtotal": 4200.0,
+    "tax": 336.0,
+    "total": 4536.0
+  },
+  {
+    "invoice_number": "NW-2203",
+    "vendor_id": "northwind",
+    "vendor_name": "Northwind Office Supply",
+    "invoice_date": "2026-04-03",
+    "po_reference": "PO-7710",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "PPR-A4",
+        "description": "Copy paper A4, case of 5 reams",
+        "qty": 19,
+        "unit_price": 41.7,
+        "amount": 792.3
+      },
+      {
+        "sku": "TNR-BLK",
+        "description": "Toner cartridge, black",
+        "qty": 6,
+        "unit_price": 86.63,
+        "amount": 519.78
+      },
+      {
+        "sku": "ORG-DSK",
+        "description": "Desk organizer",
+        "qty": 2,
+        "unit_price": 22.76,
+        "amount": 45.52
+      }
+    ],
+    "subtotal": 1357.6,
+    "tax": 108.61,
+    "total": 1466.21
+  },
+  {
+    "invoice_number": "KIP-2202",
+    "vendor_id": "kestrel",
+    "vendor_name": "Kestrel Industrial Parts",
+    "invoice_date": "2026-04-08",
+    "po_reference": "KIP-SO-3765",
+    "payment_terms": "Net 45",
+    "lines": [
+      {
+        "sku": "MTR-CPL",
+        "description": "Motor coupling",
+        "qty": 3,
+        "unit_price": 92.18,
+        "amount": 276.54
+      },
+      {
+        "sku": "HYD-H10",
+        "description": "Hydraulic hose 1/2 in, 10 ft",
+        "qty": 7,
+        "unit_price": 59.53,
+        "amount": 416.71
+      }
+    ],
+    "subtotal": 693.25,
+    "tax": 55.46,
+    "total": 748.71
+  },
+  {
+    "invoice_number": "MER-2202",
+    "vendor_id": "meridian",
+    "vendor_name": "Meridian Logistics",
+    "invoice_date": "2026-04-12",
+    "po_reference": "PO-7702",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "LTL-REG",
+        "description": "LTL shipment, regional lane",
+        "qty": 3,
+        "unit_price": 1295.19,
+        "amount": 3885.57
+      },
+      {
+        "sku": "WH-HNDL",
+        "description": "Warehouse handling fee",
+        "qty": 1,
+        "unit_price": 180.7,
+        "amount": 180.7
+      },
+      {
+        "sku": "FRT-SEP",
+        "description": "Freight charge",
+        "qty": 1,
+        "unit_price": 477.74,
+        "amount": 477.74
+      }
+    ],
+    "subtotal": 4544.01,
+    "tax": 363.52,
+    "total": 4907.53
+  },
+  {
+    "invoice_number": "VIR-2202",
+    "vendor_id": "vireo",
+    "vendor_name": "Vireo Catering",
+    "invoice_date": "2026-04-14",
+    "po_reference": "PO-7755",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "COF-SVC",
+        "description": "Coffee service",
+        "qty": 4,
+        "unit_price": 96.94,
+        "amount": 387.76
+      }
+    ],
+    "subtotal": 387.76,
+    "tax": 31.02,
+    "total": 418.78
+  },
+  {
+    "invoice_number": "BH-2204",
+    "vendor_id": "blueharbor",
+    "vendor_name": "Blue Harbor Packaging",
+    "invoice_date": "2026-04-18",
+    "po_reference": "PO-7731",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "WRP-STR",
+        "description": "Stretch wrap roll",
+        "qty": 24,
+        "unit_price": 25.32,
+        "amount": 607.68
+      }
+    ],
+    "subtotal": 607.68,
+    "tax": 48.61,
+    "total": 656.29
+  },
+  {
+    "invoice_number": "NW-2204",
+    "vendor_id": "northwind",
+    "vendor_name": "Northwind Office Supply",
+    "invoice_date": "2026-04-20",
+    "po_reference": "PO-7711",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "TNR-BLK",
+        "description": "Toner cartridge, black",
+        "qty": 5,
+        "unit_price": 74.69,
+        "amount": 373.45
+      },
+      {
+        "sku": "PPR-A4",
+        "description": "Copy paper A4, case of 5 reams",
+        "qty": 5,
+        "unit_price": 44.68,
+        "amount": 223.4
+      },
+      {
+        "sku": "ORG-DSK",
+        "description": "Desk organizer",
+        "qty": 6,
+        "unit_price": 24.8,
+        "amount": 148.8
+      }
+    ],
+    "subtotal": 745.65,
+    "tax": 59.66,
+    "total": 805.31
+  },
+  {
+    "invoice_number": "ARD-2202",
+    "vendor_id": "ardent",
+    "vendor_name": "Ardent IT Solutions",
+    "invoice_date": "2026-04-23",
+    "po_reference": "PO-7749",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "MES-SEAT",
+        "description": "Managed endpoint support, per seat",
+        "qty": 41,
+        "unit_price": 45.0,
+        "amount": 1845.0
+      },
+      {
+        "sku": "OFS-SEAT",
+        "description": "Office suite license, per seat",
+        "qty": 41,
+        "unit_price": 22.0,
+        "amount": 902.0
+      }
+    ],
+    "subtotal": 2747.0,
+    "tax": 219.76,
+    "total": 2966.76
+  },
+  {
+    "invoice_number": "BH-2205",
+    "vendor_id": "blueharbor",
+    "vendor_name": "Blue Harbor Packaging",
+    "invoice_date": "2026-05-01",
+    "po_reference": "PO-7732",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "BOX-181212",
+        "description": "Corrugated box 18x12x12, bundle of 25",
+        "qty": 16,
+        "unit_price": 37.46,
+        "amount": 599.36
+      },
+      {
+        "sku": "WRP-STR",
+        "description": "Stretch wrap roll",
+        "qty": 9,
+        "unit_price": 24.12,
+        "amount": 217.08
+      }
+    ],
+    "subtotal": 816.44,
+    "tax": 65.32,
+    "total": 881.76
+  },
+  {
+    "invoice_number": "SOL-2203",
+    "vendor_id": "solace",
+    "vendor_name": "Solace Facilities Services",
+    "invoice_date": "2026-05-02",
+    "po_reference": "PO-7743",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "JAN-MTH",
+        "description": "Monthly janitorial service",
+        "qty": 1,
+        "unit_price": 4200.0,
+        "amount": 4200.0
+      }
+    ],
+    "subtotal": 4200.0,
+    "tax": 336.0,
+    "total": 4536.0
+  },
+  {
+    "invoice_number": "NW-2205",
+    "vendor_id": "northwind",
+    "vendor_name": "Northwind Office Supply",
+    "invoice_date": "2026-05-06",
+    "po_reference": "PO-7712",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "ORG-DSK",
+        "description": "Desk organizer",
+        "qty": 7,
+        "unit_price": 23.34,
+        "amount": 163.38
+      },
+      {
+        "sku": "PPR-A4",
+        "description": "Copy paper A4, case of 5 reams",
+        "qty": 5,
+        "unit_price": 42.19,
+        "amount": 210.95
+      },
+      {
+        "sku": "TNR-BLK",
+        "description": "Toner cartridge, black",
+        "qty": 5,
+        "unit_price": 72.33,
+        "amount": 361.65
+      }
+    ],
+    "subtotal": 735.98,
+    "tax": 58.88,
+    "total": 794.86
+  },
+  {
+    "invoice_number": "KIP-2203",
+    "vendor_id": "kestrel",
+    "vendor_name": "Kestrel Industrial Parts",
+    "invoice_date": "2026-05-10",
+    "po_reference": "KIP-SO-3058",
+    "payment_terms": "Net 45",
+    "lines": [
+      {
+        "sku": "MTR-CPL",
+        "description": "Motor coupling",
+        "qty": 5,
+        "unit_price": 99.06,
+        "amount": 495.3
+      }
+    ],
+    "subtotal": 495.3,
+    "tax": 39.62,
+    "total": 534.92
+  },
+  {
+    "invoice_number": "MER-2203",
+    "vendor_id": "meridian",
+    "vendor_name": "Meridian Logistics",
+    "invoice_date": "2026-05-14",
+    "po_reference": "PO-7703",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "LTL-REG",
+        "description": "LTL shipment, regional lane",
+        "qty": 3,
+        "unit_price": 906.22,
+        "amount": 2718.66
+      },
+      {
+        "sku": "FRT-SEP",
+        "description": "Freight charge",
+        "qty": 1,
+        "unit_price": 393.54,
+        "amount": 393.54
+      }
+    ],
+    "subtotal": 3112.2,
+    "tax": 248.98,
+    "total": 3361.18
+  },
+  {
+    "invoice_number": "BH-2205",
+    "vendor_id": "blueharbor",
+    "vendor_name": "Blue Harbor Packaging",
+    "invoice_date": "2026-05-14",
+    "po_reference": "PO-7732",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "BOX-181212",
+        "description": "Corrugated box 18x12x12, bundle of 25",
+        "qty": 16,
+        "unit_price": 37.46,
+        "amount": 599.36
+      },
+      {
+        "sku": "WRP-STR",
+        "description": "Stretch wrap roll",
+        "qty": 9,
+        "unit_price": 24.12,
+        "amount": 217.08
+      }
+    ],
+    "subtotal": 816.44,
+    "tax": 65.32,
+    "total": 881.76
+  },
+  {
+    "invoice_number": "VIR-2203",
+    "vendor_id": "vireo",
+    "vendor_name": "Vireo Catering",
+    "invoice_date": "2026-05-14",
+    "po_reference": "PO-7756",
+    "payment_terms": "2/10 Net 30",
+    "lines": [
+      {
+        "sku": "LUN-HEAD",
+        "description": "Working lunch, per head",
+        "qty": 29,
+        "unit_price": 14.93,
+        "amount": 432.97
+      }
+    ],
+    "subtotal": 432.97,
+    "tax": 34.64,
+    "total": 467.61
+  },
+  {
+    "invoice_number": "BH-2206",
+    "vendor_id": "blueharbor",
+    "vendor_name": "Blue Harbor Packaging",
+    "invoice_date": "2026-05-17",
+    "po_reference": "PO-7733",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "WRP-STR",
+        "description": "Stretch wrap roll",
+        "qty": 6,
+        "unit_price": 23.08,
+        "amount": 138.48
+      }
+    ],
+    "subtotal": 138.48,
+    "tax": 11.08,
+    "total": 149.56
+  },
+  {
+    "invoice_number": "NW-2206",
+    "vendor_id": "northwind",
+    "vendor_name": "Northwind Office Supply",
+    "invoice_date": "2026-05-20",
+    "po_reference": "PO-7713",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "PPR-A4",
+        "description": "Copy paper A4, case of 5 reams",
+        "qty": 7,
+        "unit_price": 38.6,
+        "amount": 270.2
+      }
+    ],
+    "subtotal": 270.2,
+    "tax": 21.62,
+    "total": 291.82
+  },
+  {
+    "invoice_number": "ARD-2203",
+    "vendor_id": "ardent",
+    "vendor_name": "Ardent IT Solutions",
+    "invoice_date": "2026-05-23",
+    "po_reference": "PO-7750",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "MES-SEAT",
+        "description": "Managed endpoint support, per seat",
+        "qty": 41,
+        "unit_price": 45.0,
+        "amount": 1845.0
+      },
+      {
+        "sku": "OFS-SEAT",
+        "description": "Office suite license, per seat",
+        "qty": 41,
+        "unit_price": 22.0,
+        "amount": 902.0
+      }
+    ],
+    "subtotal": 2747.0,
+    "tax": 219.76,
+    "total": 2966.76
+  },
+  {
+    "invoice_number": "SOL-2204",
+    "vendor_id": "solace",
+    "vendor_name": "Solace Facilities Services",
+    "invoice_date": "2026-06-02",
+    "po_reference": "PO-7744",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "JAN-MTH",
+        "description": "Monthly janitorial service",
+        "qty": 1,
+        "unit_price": 4536.0,
+        "amount": 4536.0
+      },
+      {
+        "sku": "WIN-CLN",
+        "description": "Window cleaning, quarterly visit",
+        "qty": 1,
+        "unit_price": 702.0,
+        "amount": 702.0
+      }
+    ],
+    "subtotal": 5238.0,
+    "tax": 419.04,
+    "total": 5657.04
+  },
+  {
+    "invoice_number": "NW-2207",
+    "vendor_id": "northwind",
+    "vendor_name": "Northwind Office Supply",
+    "invoice_date": "2026-06-03",
+    "po_reference": "PO-7714",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "ORG-DSK",
+        "description": "Desk organizer",
+        "qty": 9,
+        "unit_price": 24.63,
+        "amount": 221.67
+      }
+    ],
+    "subtotal": 221.67,
+    "tax": 17.7,
+    "total": 239.37
+  },
+  {
+    "invoice_number": "BH-2207",
+    "vendor_id": "blueharbor",
+    "vendor_name": "Blue Harbor Packaging",
+    "invoice_date": "2026-06-03",
+    "po_reference": "PO-7734",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "BOX-181212",
+        "description": "Corrugated box 18x12x12, bundle of 25",
+        "qty": 35,
+        "unit_price": 37.61,
+        "amount": 1316.35
+      },
+      {
+        "sku": "WRP-STR",
+        "description": "Stretch wrap roll",
+        "qty": 18,
+        "unit_price": 27.23,
+        "amount": 490.14
+      },
+      {
+        "sku": "VFL-10",
+        "description": "Void fill, 10 cu ft bag",
+        "qty": 11,
+        "unit_price": 31.33,
+        "amount": 344.63
+      }
+    ],
+    "subtotal": 2151.12,
+    "tax": 172.09,
+    "total": 2323.21
+  },
+  {
+    "invoice_number": "KIP-2204",
+    "vendor_id": "kestrel",
+    "vendor_name": "Kestrel Industrial Parts",
+    "invoice_date": "2026-06-10",
+    "po_reference": "KIP-SO-3413",
+    "payment_terms": "Net 45",
+    "lines": [
+      {
+        "sku": "BRG-6204",
+        "description": "Bearing assembly 6204",
+        "qty": 58,
+        "unit_price": 14.34,
+        "amount": 831.72
+      }
+    ],
+    "subtotal": 831.72,
+    "tax": 66.54,
+    "total": 898.26
+  },
+  {
+    "invoice_number": "MER-2204",
+    "vendor_id": "meridian",
+    "vendor_name": "Meridian Logistics",
+    "invoice_date": "2026-06-13",
+    "po_reference": "PO-7704",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "LTL-REG",
+        "description": "LTL shipment, regional lane",
+        "qty": 1,
+        "unit_price": 1385.21,
+        "amount": 1385.21
+      },
+      {
+        "sku": "WH-HNDL",
+        "description": "Warehouse handling fee",
+        "qty": 2,
+        "unit_price": 126.3,
+        "amount": 252.6
+      },
+      {
+        "sku": "FRT-SEP",
+        "description": "Freight charge",
+        "qty": 1,
+        "unit_price": 496.12,
+        "amount": 496.12
+      }
+    ],
+    "subtotal": 2133.93,
+    "tax": 170.71,
+    "total": 2304.64
+  },
+  {
+    "invoice_number": "VIR-2204",
+    "vendor_id": "vireo",
+    "vendor_name": "Vireo Catering",
+    "invoice_date": "2026-06-14",
+    "po_reference": "PO-7757",
+    "payment_terms": "2/10 Net 30",
+    "lines": [
+      {
+        "sku": "COF-SVC",
+        "description": "Coffee service",
+        "qty": 4,
+        "unit_price": 96.56,
+        "amount": 386.24
+      },
+      {
+        "sku": "LUN-HEAD",
+        "description": "Working lunch, per head",
+        "qty": 46,
+        "unit_price": 15.56,
+        "amount": 715.76
+      }
+    ],
+    "subtotal": 1102.0,
+    "tax": 88.16,
+    "total": 1190.16
+  },
+  {
+    "invoice_number": "BH-2208",
+    "vendor_id": "blueharbor",
+    "vendor_name": "Blue Harbor Packaging",
+    "invoice_date": "2026-06-18",
+    "po_reference": "PO-7735",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "BOX-181212",
+        "description": "Corrugated box 18x12x12, bundle of 25",
+        "qty": 10,
+        "unit_price": 37.28,
+        "amount": 372.8
+      }
+    ],
+    "subtotal": 372.8,
+    "tax": 29.82,
+    "total": 402.62
+  },
+  {
+    "invoice_number": "NW-2208",
+    "vendor_id": "northwind",
+    "vendor_name": "Northwind Office Supply",
+    "invoice_date": "2026-06-19",
+    "po_reference": "PO-7715",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "ORG-DSK",
+        "description": "Desk organizer",
+        "qty": 5,
+        "unit_price": 22.99,
+        "amount": 114.95
+      }
+    ],
+    "subtotal": 114.95,
+    "tax": 9.2,
+    "total": 124.15
+  },
+  {
+    "invoice_number": "ARD-2204",
+    "vendor_id": "ardent",
+    "vendor_name": "Ardent IT Solutions",
+    "invoice_date": "2026-06-24",
+    "po_reference": "PO-7751",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "MES-SEAT",
+        "description": "Managed endpoint support, per seat",
+        "qty": 40,
+        "unit_price": 45.0,
+        "amount": 1800.0
+      },
+      {
+        "sku": "OFS-SEAT",
+        "description": "Office suite license, per seat",
+        "qty": 40,
+        "unit_price": 22.0,
+        "amount": 880.0
+      }
+    ],
+    "subtotal": 2680.0,
+    "tax": 214.4,
+    "total": 2894.4
+  },
+  {
+    "invoice_number": "BH-2209",
+    "vendor_id": "blueharbor",
+    "vendor_name": "Blue Harbor Packaging",
+    "invoice_date": "2026-07-02",
+    "po_reference": "PO-7736",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "WRP-STR",
+        "description": "Stretch wrap roll",
+        "qty": 17,
+        "unit_price": 25.85,
+        "amount": 439.45
+      }
+    ],
+    "subtotal": 439.45,
+    "tax": 35.16,
+    "total": 474.61
+  },
+  {
+    "invoice_number": "SOL-2205",
+    "vendor_id": "solace",
+    "vendor_name": "Solace Facilities Services",
+    "invoice_date": "2026-07-02",
+    "po_reference": "PO-7745",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "JAN-MTH",
+        "description": "Monthly janitorial service",
+        "qty": 1,
+        "unit_price": 4536.0,
+        "amount": 4536.0
+      }
+    ],
+    "subtotal": 4536.0,
+    "tax": 362.88,
+    "total": 4898.88
+  },
+  {
+    "invoice_number": "NW-2209",
+    "vendor_id": "northwind",
+    "vendor_name": "Northwind Office Supply",
+    "invoice_date": "2026-07-07",
+    "po_reference": "PO-7716",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "ORG-DSK",
+        "description": "Desk organizer",
+        "qty": 3,
+        "unit_price": 19.74,
+        "amount": 59.22
+      },
+      {
+        "sku": "TNR-BLK",
+        "description": "Toner cartridge, black",
+        "qty": 2,
+        "unit_price": 77.75,
+        "amount": 155.5
+      }
+    ],
+    "subtotal": 214.72,
+    "tax": 17.19,
+    "total": 231.91
+  },
+  {
+    "invoice_number": "KIP-2205",
+    "vendor_id": "kestrel",
+    "vendor_name": "Kestrel Industrial Parts",
+    "invoice_date": "2026-07-10",
+    "po_reference": "KIP-SO-3429",
+    "payment_terms": "Net 45",
+    "lines": [
+      {
+        "sku": "MTR-CPL",
+        "description": "Motor coupling",
+        "qty": 6,
+        "unit_price": 88.87,
+        "amount": 533.22
+      }
+    ],
+    "subtotal": 533.22,
+    "tax": 42.66,
+    "total": 575.88
+  },
+  {
+    "invoice_number": "VIR-2205",
+    "vendor_id": "vireo",
+    "vendor_name": "Vireo Catering",
+    "invoice_date": "2026-07-12",
+    "po_reference": "PO-7758",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "LUN-HEAD",
+        "description": "Working lunch, per head",
+        "qty": 39,
+        "unit_price": 17.01,
+        "amount": 663.39
+      },
+      {
+        "sku": "COF-SVC",
+        "description": "Coffee service",
+        "qty": 4,
+        "unit_price": 108.46,
+        "amount": 433.84
+      }
+    ],
+    "subtotal": 1097.23,
+    "tax": 87.78,
+    "total": 1185.01
+  },
+  {
+    "invoice_number": "MER-2205",
+    "vendor_id": "meridian",
+    "vendor_name": "Meridian Logistics",
+    "invoice_date": "2026-07-13",
+    "po_reference": "PO-7705",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "LTL-REG",
+        "description": "LTL shipment, regional lane",
+        "qty": 2,
+        "unit_price": 1275.19,
+        "amount": 2550.38
+      },
+      {
+        "sku": "PAL-STR",
+        "description": "Pallet storage, monthly",
+        "qty": 5,
+        "unit_price": 85.66,
+        "amount": 428.3
+      },
+      {
+        "sku": "WH-HNDL",
+        "description": "Warehouse handling fee",
+        "qty": 1,
+        "unit_price": 150.41,
+        "amount": 150.41
+      },
+      {
+        "sku": "FRT-SEP",
+        "description": "Freight charge",
+        "qty": 1,
+        "unit_price": 469.0,
+        "amount": 469.0
+      }
+    ],
+    "subtotal": 3598.09,
+    "tax": 287.85,
+    "total": 3885.94
+  },
+  {
+    "invoice_number": "BH-2209",
+    "vendor_id": "blueharbor",
+    "vendor_name": "Blue Harbor Packaging",
+    "invoice_date": "2026-07-16",
+    "po_reference": "PO-7736",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "WRP-STR",
+        "description": "Stretch wrap roll",
+        "qty": 17,
+        "unit_price": 25.85,
+        "amount": 439.45
+      }
+    ],
+    "subtotal": 439.45,
+    "tax": 35.16,
+    "total": 474.61
+  },
+  {
+    "invoice_number": "BH-2210",
+    "vendor_id": "blueharbor",
+    "vendor_name": "Blue Harbor Packaging",
+    "invoice_date": "2026-07-19",
+    "po_reference": "PO-7737",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "BOX-181212",
+        "description": "Corrugated box 18x12x12, bundle of 25",
+        "qty": 11,
+        "unit_price": 32.87,
+        "amount": 361.57
+      },
+      {
+        "sku": "WRP-STR",
+        "description": "Stretch wrap roll",
+        "qty": 19,
+        "unit_price": 24.07,
+        "amount": 457.33
+      }
+    ],
+    "subtotal": 818.9,
+    "tax": 65.51,
+    "total": 884.41
+  },
+  {
+    "invoice_number": "NW-2210",
+    "vendor_id": "northwind",
+    "vendor_name": "Northwind Office Supply",
+    "invoice_date": "2026-07-20",
+    "po_reference": "PO-7717",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "PPR-A4",
+        "description": "Copy paper A4, case of 5 reams",
+        "qty": 6,
+        "unit_price": 44.02,
+        "amount": 264.12
+      },
+      {
+        "sku": "ORG-DSK",
+        "description": "Desk organizer",
+        "qty": 3,
+        "unit_price": 21.6,
+        "amount": 64.8
+      },
+      {
+        "sku": "TNR-BLK",
+        "description": "Toner cartridge, black",
+        "qty": 4,
+        "unit_price": 83.37,
+        "amount": 333.48
+      }
+    ],
+    "subtotal": 662.4,
+    "tax": 52.97,
+    "total": 715.37
+  },
+  {
+    "invoice_number": "ARD-2205",
+    "vendor_id": "ardent",
+    "vendor_name": "Ardent IT Solutions",
+    "invoice_date": "2026-07-26",
+    "po_reference": "PO-7752",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "MES-SEAT",
+        "description": "Managed endpoint support, per seat",
+        "qty": 41,
+        "unit_price": 45.0,
+        "amount": 1845.0
+      },
+      {
+        "sku": "OFS-SEAT",
+        "description": "Office suite license, per seat",
+        "qty": 41,
+        "unit_price": 22.0,
+        "amount": 902.0
+      }
+    ],
+    "subtotal": 2747.0,
+    "tax": 219.76,
+    "total": 2966.76
+  },
+  {
+    "invoice_number": "SOL-2206",
+    "vendor_id": "solace",
+    "vendor_name": "Solace Facilities Services",
+    "invoice_date": "2026-08-02",
+    "po_reference": "PO-7746",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "JAN-MTH",
+        "description": "Monthly janitorial service",
+        "qty": 1,
+        "unit_price": 4536.0,
+        "amount": 4536.0
+      }
+    ],
+    "subtotal": 4536.0,
+    "tax": 362.88,
+    "total": 4898.88
+  },
+  {
+    "invoice_number": "NW-2211",
+    "vendor_id": "northwind",
+    "vendor_name": "Northwind Office Supply",
+    "invoice_date": "2026-08-04",
+    "po_reference": "PO-7718",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "PPR-A4",
+        "description": "Copy paper A4, case of 5 reams",
+        "qty": 18,
+        "unit_price": 39.33,
+        "amount": 707.94
+      },
+      {
+        "sku": "TNR-BLK",
+        "description": "Toner cartridge, black",
+        "qty": 2,
+        "unit_price": 83.2,
+        "amount": 166.4
+      }
+    ],
+    "subtotal": 874.34,
+    "tax": 69.99,
+    "total": 944.33
+  },
+  {
+    "invoice_number": "BH-2211",
+    "vendor_id": "blueharbor",
+    "vendor_name": "Blue Harbor Packaging",
+    "invoice_date": "2026-08-05",
+    "po_reference": "PO-7738",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "WRP-STR",
+        "description": "Stretch wrap roll",
+        "qty": 24,
+        "unit_price": 23.14,
+        "amount": 555.36
+      }
+    ],
+    "subtotal": 555.36,
+    "tax": 44.43,
+    "total": 599.79
+  },
+  {
+    "invoice_number": "KIP-2206",
+    "vendor_id": "kestrel",
+    "vendor_name": "Kestrel Industrial Parts",
+    "invoice_date": "2026-08-08",
+    "po_reference": "KIP-SO-3468",
+    "payment_terms": "Net 45",
+    "lines": [
+      {
+        "sku": "MTR-CPL",
+        "description": "Motor coupling",
+        "qty": 3,
+        "unit_price": 102.73,
+        "amount": 308.19
+      },
+      {
+        "sku": "HYD-H10",
+        "description": "Hydraulic hose 1/2 in, 10 ft",
+        "qty": 9,
+        "unit_price": 48.58,
+        "amount": 437.22
+      },
+      {
+        "sku": "BRG-6204",
+        "description": "Bearing assembly 6204",
+        "qty": 45,
+        "unit_price": 14.65,
+        "amount": 659.25
+      }
+    ],
+    "subtotal": 1404.66,
+    "tax": 112.37,
+    "total": 1517.03
+  },
+  {
+    "invoice_number": "MER-2206",
+    "vendor_id": "meridian",
+    "vendor_name": "Meridian Logistics",
+    "invoice_date": "2026-08-13",
+    "po_reference": "PO-7706",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "WH-HNDL",
+        "description": "Warehouse handling fee",
+        "qty": 3,
+        "unit_price": 141.36,
+        "amount": 424.08
+      },
+      {
+        "sku": "LTL-REG",
+        "description": "LTL shipment, regional lane",
+        "qty": 1,
+        "unit_price": 1185.02,
+        "amount": 1185.02
+      }
+    ],
+    "subtotal": 1609.1,
+    "tax": 128.73,
+    "total": 1737.83
+  },
+  {
+    "invoice_number": "VIR-2206",
+    "vendor_id": "vireo",
+    "vendor_name": "Vireo Catering",
+    "invoice_date": "2026-08-13",
+    "po_reference": "PO-7759",
+    "payment_terms": "2/10 Net 30",
+    "lines": [
+      {
+        "sku": "LUN-HEAD",
+        "description": "Working lunch, per head",
+        "qty": 41,
+        "unit_price": 16.68,
+        "amount": 683.88
+      },
+      {
+        "sku": "COF-SVC",
+        "description": "Coffee service",
+        "qty": 4,
+        "unit_price": 113.1,
+        "amount": 452.4
+      }
+    ],
+    "subtotal": 1136.28,
+    "tax": 90.9,
+    "total": 1227.18
+  },
+  {
+    "invoice_number": "BH-2212",
+    "vendor_id": "blueharbor",
+    "vendor_name": "Blue Harbor Packaging",
+    "invoice_date": "2026-08-18",
+    "po_reference": "PO-7739",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "VFL-10",
+        "description": "Void fill, 10 cu ft bag",
+        "qty": 10,
+        "unit_price": 30.42,
+        "amount": 304.2
+      },
+      {
+        "sku": "BOX-181212",
+        "description": "Corrugated box 18x12x12, bundle of 25",
+        "qty": 31,
+        "unit_price": 39.37,
+        "amount": 1220.47
+      },
+      {
+        "sku": "WRP-STR",
+        "description": "Stretch wrap roll",
+        "qty": 16,
+        "unit_price": 25.98,
+        "amount": 415.68
+      }
+    ],
+    "subtotal": 1940.35,
+    "tax": 155.23,
+    "total": 2095.58
+  },
+  {
+    "invoice_number": "NW-2212",
+    "vendor_id": "northwind",
+    "vendor_name": "Northwind Office Supply",
+    "invoice_date": "2026-08-21",
+    "po_reference": "PO-7719",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "ORG-DSK",
+        "description": "Desk organizer",
+        "qty": 8,
+        "unit_price": 23.1,
+        "amount": 184.8
+      },
+      {
+        "sku": "PPR-A4",
+        "description": "Copy paper A4, case of 5 reams",
+        "qty": 8,
+        "unit_price": 39.74,
+        "amount": 317.92
+      },
+      {
+        "sku": "TNR-BLK",
+        "description": "Toner cartridge, black",
+        "qty": 3,
+        "unit_price": 81.12,
+        "amount": 243.36
+      }
+    ],
+    "subtotal": 746.08,
+    "tax": 59.72,
+    "total": 805.8
+  },
+  {
+    "invoice_number": "ARD-2206",
+    "vendor_id": "ardent",
+    "vendor_name": "Ardent IT Solutions",
+    "invoice_date": "2026-08-27",
+    "po_reference": "PO-7753",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "MES-SEAT",
+        "description": "Managed endpoint support, per seat",
+        "qty": 41,
+        "unit_price": 45.0,
+        "amount": 1845.0
+      },
+      {
+        "sku": "OFS-SEAT",
+        "description": "Office suite license, per seat",
+        "qty": 41,
+        "unit_price": 22.0,
+        "amount": 902.0
+      }
+    ],
+    "subtotal": 2747.0,
+    "tax": 219.76,
+    "total": 2966.76
+  },
+  {
+    "invoice_number": "SOL-2207",
+    "vendor_id": "solace",
+    "vendor_name": "Solace Facilities Services",
+    "invoice_date": "2026-09-02",
+    "po_reference": "PO-7747",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "JAN-MTH",
+        "description": "Monthly janitorial service",
+        "qty": 1,
+        "unit_price": 4536.0,
+        "amount": 4536.0
+      },
+      {
+        "sku": "WIN-CLN",
+        "description": "Window cleaning, quarterly visit",
+        "qty": 1,
+        "unit_price": 702.0,
+        "amount": 702.0
+      }
+    ],
+    "subtotal": 5238.0,
+    "tax": 419.04,
+    "total": 5657.04
+  },
+  {
+    "invoice_number": "BH-2213",
+    "vendor_id": "blueharbor",
+    "vendor_name": "Blue Harbor Packaging",
+    "invoice_date": "2026-09-05",
+    "po_reference": "PO-7740",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "VFL-10",
+        "description": "Void fill, 10 cu ft bag",
+        "qty": 9,
+        "unit_price": 32.41,
+        "amount": 291.69
+      },
+      {
+        "sku": "WRP-STR",
+        "description": "Stretch wrap roll",
+        "qty": 15,
+        "unit_price": 25.33,
+        "amount": 379.95
+      }
+    ],
+    "subtotal": 671.64,
+    "tax": 53.73,
+    "total": 725.37
+  },
+  {
+    "invoice_number": "NW-2213",
+    "vendor_id": "northwind",
+    "vendor_name": "Northwind Office Supply",
+    "invoice_date": "2026-09-06",
+    "po_reference": "PO-7720",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "TNR-BLK",
+        "description": "Toner cartridge, black",
+        "qty": 8,
+        "unit_price": 86.64,
+        "amount": 693.12
+      }
+    ],
+    "subtotal": 693.12,
+    "tax": 55.44,
+    "total": 748.56
+  },
+  {
+    "invoice_number": "KIP-2207",
+    "vendor_id": "kestrel",
+    "vendor_name": "Kestrel Industrial Parts",
+    "invoice_date": "2026-09-10",
+    "po_reference": "KIP-SO-3075",
+    "payment_terms": "Net 45",
+    "lines": [
+      {
+        "sku": "HYD-H10",
+        "description": "Hydraulic hose 1/2 in, 10 ft",
+        "qty": 13,
+        "unit_price": 59.98,
+        "amount": 779.74
+      }
+    ],
+    "subtotal": 779.74,
+    "tax": 62.38,
+    "total": 842.12
+  },
+  {
+    "invoice_number": "MER-2207",
+    "vendor_id": "meridian",
+    "vendor_name": "Meridian Logistics",
+    "invoice_date": "2026-09-12",
+    "po_reference": "PO-7707",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "LTL-REG",
+        "description": "LTL shipment, regional lane",
+        "qty": 4,
+        "unit_price": 1058.7,
+        "amount": 4234.8
+      }
+    ],
+    "subtotal": 4234.8,
+    "tax": 338.78,
+    "total": 4573.58
+  },
+  {
+    "invoice_number": "VIR-2207",
+    "vendor_id": "vireo",
+    "vendor_name": "Vireo Catering",
+    "invoice_date": "2026-09-14",
+    "po_reference": "PO-7760",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "COF-SVC",
+        "description": "Coffee service",
+        "qty": 1,
+        "unit_price": 97.1,
+        "amount": 97.1
+      }
+    ],
+    "subtotal": 97.1,
+    "tax": 7.77,
+    "total": 104.87
+  }
+]

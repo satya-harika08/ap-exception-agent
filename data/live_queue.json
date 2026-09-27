@@ -1,0 +1,238 @@
+[
+  {
+    "invoice_number": "MER-2208",
+    "vendor_id": "meridian",
+    "vendor_name": "Meridian Logistics",
+    "invoice_date": "2026-09-22",
+    "po_reference": "PO-7761",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "WH-HNDL",
+        "description": "Warehouse handling fee",
+        "qty": 2,
+        "unit_price": 146.19,
+        "amount": 292.38
+      },
+      {
+        "sku": "FRT-SEP",
+        "description": "Freight charge",
+        "qty": 1,
+        "unit_price": 450.0,
+        "amount": 450.0
+      }
+    ],
+    "subtotal": 742.38,
+    "tax": 59.39,
+    "total": 801.77,
+    "_expected": {
+      "exception_type": "freight_not_on_po",
+      "action": "escalate",
+      "why": "Old pattern was approve, but the 2026-08-01 contract makes separate freight invalid."
+    }
+  },
+  {
+    "invoice_number": "NW-2214",
+    "vendor_id": "northwind",
+    "vendor_name": "Northwind Office Supply",
+    "invoice_date": "2026-09-22",
+    "po_reference": "PO-7762",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "TNR-BLK",
+        "description": "Toner cartridge, black",
+        "qty": 4,
+        "unit_price": 84.78,
+        "amount": 339.12
+      },
+      {
+        "sku": "ORG-DSK",
+        "description": "Desk organizer",
+        "qty": 8,
+        "unit_price": 19.77,
+        "amount": 158.16
+      }
+    ],
+    "subtotal": 497.28,
+    "tax": 39.81,
+    "total": 537.09,
+    "_expected": {
+      "exception_type": "tax_mismatch",
+      "action": "auto_approve",
+      "why": "Within $0.05 rounding policy, many prior approvals."
+    }
+  },
+  {
+    "invoice_number": "KIP-2208",
+    "vendor_id": "kestrel",
+    "vendor_name": "Kestrel Industrial Parts",
+    "invoice_date": "2026-09-23",
+    "po_reference": "KIP-SO-3871",
+    "payment_terms": "Net 45",
+    "lines": [
+      {
+        "sku": "BRG-6204",
+        "description": "Bearing assembly 6204",
+        "qty": 80,
+        "unit_price": 15.75,
+        "amount": 1260.0
+      },
+      {
+        "sku": "MTR-CPL",
+        "description": "Motor coupling",
+        "qty": 2,
+        "unit_price": 105.19,
+        "amount": 210.38
+      }
+    ],
+    "subtotal": 1470.38,
+    "tax": 117.63,
+    "total": 1588.01,
+    "_expected": {
+      "exception_type": "po_reference_not_found",
+      "action": "auto_approve",
+      "why": "Kestrel always quotes its own sales order number.",
+      "matched_po": "PO-7763"
+    }
+  },
+  {
+    "invoice_number": "BH-2213",
+    "vendor_id": "blueharbor",
+    "vendor_name": "Blue Harbor Packaging",
+    "invoice_date": "2026-09-24",
+    "po_reference": "PO-7740",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "VFL-10",
+        "description": "Void fill, 10 cu ft bag",
+        "qty": 9,
+        "unit_price": 32.41,
+        "amount": 291.69
+      },
+      {
+        "sku": "WRP-STR",
+        "description": "Stretch wrap roll",
+        "qty": 15,
+        "unit_price": 25.33,
+        "amount": 379.95
+      }
+    ],
+    "subtotal": 671.64,
+    "tax": 53.73,
+    "total": 725.37,
+    "_expected": {
+      "exception_type": "duplicate_invoice",
+      "action": "reject",
+      "why": "Duplicate of BH-2213 already processed."
+    }
+  },
+  {
+    "invoice_number": "SOL-2208",
+    "vendor_id": "solace",
+    "vendor_name": "Solace Facilities Services",
+    "invoice_date": "2026-09-24",
+    "po_reference": "PO-7764",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "JAN-MTH",
+        "description": "Monthly janitorial service",
+        "qty": 1,
+        "unit_price": 4536.0,
+        "amount": 4536.0
+      }
+    ],
+    "subtotal": 4536.0,
+    "tax": 362.88,
+    "total": 4898.88,
+    "_expected": {
+      "exception_type": null,
+      "action": "none",
+      "why": "Clean invoice at the amended rate."
+    }
+  },
+  {
+    "invoice_number": "ARD-2207",
+    "vendor_id": "ardent",
+    "vendor_name": "Ardent IT Solutions",
+    "invoice_date": "2026-09-25",
+    "po_reference": "PO-7765",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "MES-SEAT",
+        "description": "Managed endpoint support, per seat",
+        "qty": 43,
+        "unit_price": 45.0,
+        "amount": 1935.0
+      },
+      {
+        "sku": "OFS-SEAT",
+        "description": "Office suite license, per seat",
+        "qty": 43,
+        "unit_price": 22.0,
+        "amount": 946.0
+      }
+    ],
+    "subtotal": 2881.0,
+    "tax": 230.48,
+    "total": 3111.48,
+    "_expected": {
+      "exception_type": null,
+      "action": "none",
+      "why": "Clean invoice."
+    }
+  },
+  {
+    "invoice_number": "VIR-2208",
+    "vendor_id": "vireo",
+    "vendor_name": "Vireo Catering",
+    "invoice_date": "2026-09-25",
+    "po_reference": "PO-7766",
+    "payment_terms": "Net 30",
+    "lines": [
+      {
+        "sku": "LUN-HEAD",
+        "description": "Working lunch, per head",
+        "qty": 59,
+        "unit_price": 14.61,
+        "amount": 861.99
+      }
+    ],
+    "subtotal": 861.99,
+    "tax": 68.96,
+    "total": 930.95,
+    "_expected": {
+      "exception_type": "terms_mismatch",
+      "action": "auto_approve",
+      "why": "Vireo always prints default terms; PO terms apply."
+    }
+  },
+  {
+    "invoice_number": "PIN-2201",
+    "vendor_id": "pinecrest",
+    "vendor_name": "Pinecrest Staffing",
+    "invoice_date": "2026-09-26",
+    "po_reference": "PO-7767",
+    "payment_terms": "Net 15",
+    "lines": [
+      {
+        "sku": "TMP-APC",
+        "description": "Temporary AP clerk, hourly",
+        "qty": 80,
+        "unit_price": 30.0,
+        "amount": 2400.0
+      }
+    ],
+    "subtotal": 2400.0,
+    "tax": 192.0,
+    "total": 2592.0,
+    "_expected": {
+      "exception_type": "quantity_variance",
+      "action": "escalate",
+      "why": "New vendor with no history; 80 hours billed vs 72 on PO."
+    }
+  }
+]
