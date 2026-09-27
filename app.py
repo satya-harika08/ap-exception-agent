@@ -13,6 +13,7 @@ we'll plug in the agent (Hindsight + Groq) once Persons A and B finish.
 import json
 from pathlib import Path
 
+import pandas as pd
 import streamlit as st
 
 DATA = Path("data")
@@ -33,6 +34,28 @@ if not (DATA / "live_queue.json").exists():
 
 queue, pos = load()
 
+RED = "background-color: rgba(255, 80, 80, 0.35)"
+
+
+def lines_table(lines, compare_to=None):
+    """Show lines with 2 decimals. Rows not on the PO are highlighted red."""
+    df = pd.DataFrame([{"Description": l["description"], "Qty": l["qty"],
+                        "Unit price": l["unit_price"], "Amount": l["amount"]} for l in lines])
+    styler = df.style.format({"Unit price": "{:,.2f}", "Amount": "{:,.2f}"})
+    if compare_to is not None:
+        po_keys = {(l["sku"], l["qty"], l["unit_price"]) for l in compare_to}
+        flags = [(l["sku"], l["qty"], l["unit_price"]) not in po_keys for l in lines]
+        styler = styler.apply(lambda row: [RED if flags[row.name] else "" for _ in row], axis=1)
+    st.dataframe(styler, hide_index=True, use_container_width=True)
+
+
+def totals_line(doc, other=None):
+    """Escaped dollar signs (Streamlit reads $...$ as math). Tax shown red if it differs."""
+    tax = f"\\${doc['tax']:,.2f}"
+    if other is not None and abs(doc["tax"] - other["tax"]) > 0.001:
+        tax = f":red[{tax}]"
+    st.markdown(f"Subtotal \\${doc['subtotal']:,.2f} | Tax {tax} | **Total \\${doc['total']:,.2f}**")
+
 # ---------- header ----------
 st.title("AP Exception Agent")
 memory_on = st.toggle("Memory ON (Hindsight)", value=True)
@@ -52,17 +75,20 @@ with right:
     st.subheader(f"{inv['invoice_number']} from {inv['vendor_name']}")
     st.write(f"Date: {inv['invoice_date']}  |  PO reference: {inv['po_reference']}  |  Terms: {inv['payment_terms']}")
 
+    po = pos.get(inv["po_reference"])
+    if po and po["payment_terms"] != inv["payment_terms"]:
+        st.markdown(f":red[Payment terms differ: invoice says {inv['payment_terms']}, PO says {po['payment_terms']}]")
+
     c1, c2 = st.columns(2)
     with c1:
         st.markdown("**Invoice lines**")
-        st.table([{k: l[k] for k in ("description", "qty", "unit_price", "amount")} for l in inv["lines"]])
-        st.write(f"Subtotal ${inv['subtotal']:,.2f} | Tax ${inv['tax']:,.2f} | **Total ${inv['total']:,.2f}**")
+        lines_table(inv["lines"], compare_to=po["lines"] if po else None)
+        totals_line(inv, po)
     with c2:
         st.markdown("**Purchase order**")
-        po = pos.get(inv["po_reference"])
         if po:
-            st.table([{k: l[k] for k in ("description", "qty", "unit_price", "amount")} for l in po["lines"]])
-            st.write(f"Subtotal ${po['subtotal']:,.2f} | Tax ${po['tax']:,.2f} | **Total ${po['total']:,.2f}**")
+            lines_table(po["lines"])
+            totals_line(po)
         else:
             st.warning(f"No PO found for reference {inv['po_reference']}")
 
