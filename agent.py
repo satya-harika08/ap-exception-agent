@@ -275,7 +275,7 @@ def run_eval(agent, queue, score, results):
         print(f"\n=== {inv['invoice_number']} {inv['vendor_name']} | expected: {exp['action']} ===")
         for memory_on in (False, True):
             r = agent.process(inv, memory_on=memory_on)
-            ok = r["action"] in ACCEPTABLE[exp["action"]]
+            ok = r["action"] in ACCEPTABLE[exp["action"]] | set(exp.get("also_ok", []))
             score[memory_on] += ok
             label = "ON " if memory_on else "OFF"
             print(f"  Memory {label}: {r['action']:<18} conf {r['confidence']:.2f}  "

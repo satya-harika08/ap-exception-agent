@@ -258,7 +258,9 @@ def gen_live_queue():
     finalize(inv)
     pos.append(po)
     expect(inv, "freight_not_on_po", "escalate",
-           "Old pattern was approve, but the 2026-08-01 contract makes separate freight invalid.")
+           "Old pattern was approve, but the 2026-08-01 contract makes separate freight invalid. "
+           "Rejecting for a corrected invoice is equally valid once the contract is known.",
+           also_ok=["reject"])
 
     po, inv = make_pair("northwind", date(2026, 9, 22), make_lines("northwind"))
     finalize(inv, tax_adjust=0.03)

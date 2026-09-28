@@ -28,7 +28,10 @@
     "_expected": {
       "exception_type": "freight_not_on_po",
       "action": "escalate",
-      "why": "Old pattern was approve, but the 2026-08-01 contract makes separate freight invalid."
+      "why": "Old pattern was approve, but the 2026-08-01 contract makes separate freight invalid. Rejecting for a corrected invoice is equally valid once the contract is known.",
+      "also_ok": [
+        "reject"
+      ]
     }
   },
   {
